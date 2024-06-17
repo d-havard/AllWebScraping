@@ -1,0 +1,133 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Stage\\ExcelC#\\ExcelLocalBiblioC\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{288FE9F9-3E3A-4D71-92C6-4D211EDC5C9B}|ExcelLocalBiblioC\\ExcelLocalBiblioC.csproj|c:\\stage\\excelc#\\excellocalbiblioc\\excellocalbiblioc\\excelstructure.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{288FE9F9-3E3A-4D71-92C6-4D211EDC5C9B}|ExcelLocalBiblioC\\ExcelLocalBiblioC.csproj|solutionrelative:excellocalbiblioc\\excelstructure.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{288FE9F9-3E3A-4D71-92C6-4D211EDC5C9B}|ExcelLocalBiblioC\\ExcelLocalBiblioC.csproj|C:\\Stage\\ExcelC#\\ExcelLocalBiblioC\\excellocalbiblioc\\puttimecells.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{288FE9F9-3E3A-4D71-92C6-4D211EDC5C9B}|ExcelLocalBiblioC\\ExcelLocalBiblioC.csproj|solutionrelative:excellocalbiblioc\\puttimecells.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{288FE9F9-3E3A-4D71-92C6-4D211EDC5C9B}|ExcelLocalBiblioC\\ExcelLocalBiblioC.csproj|C:\\Stage\\ExcelC#\\ExcelLocalBiblioC\\excellocalbiblioc\\excelcalculs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{288FE9F9-3E3A-4D71-92C6-4D211EDC5C9B}|ExcelLocalBiblioC\\ExcelLocalBiblioC.csproj|solutionrelative:excellocalbiblioc\\excelcalculs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{288FE9F9-3E3A-4D71-92C6-4D211EDC5C9B}|ExcelLocalBiblioC\\ExcelLocalBiblioC.csproj|C:\\Stage\\ExcelC#\\ExcelLocalBiblioC\\excellocalbiblioc\\excelfunctions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{288FE9F9-3E3A-4D71-92C6-4D211EDC5C9B}|ExcelLocalBiblioC\\ExcelLocalBiblioC.csproj|solutionrelative:excellocalbiblioc\\excelfunctions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{288FE9F9-3E3A-4D71-92C6-4D211EDC5C9B}|ExcelLocalBiblioC\\ExcelLocalBiblioC.csproj|C:\\Stage\\ExcelC#\\ExcelLocalBiblioC\\excellocalbiblioc\\dataexcel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{288FE9F9-3E3A-4D71-92C6-4D211EDC5C9B}|ExcelLocalBiblioC\\ExcelLocalBiblioC.csproj|solutionrelative:excellocalbiblioc\\dataexcel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B18827D6-0B13-4BCD-B133-371C24E40B53}|ExcelConsoleLocal\\ExcelConsoleLocal.csproj|C:\\Stage\\ExcelC#\\ExcelLocalBiblioC\\excelconsolelocal\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B18827D6-0B13-4BCD-B133-371C24E40B53}|ExcelConsoleLocal\\ExcelConsoleLocal.csproj|solutionrelative:excelconsolelocal\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B18827D6-0B13-4BCD-B133-371C24E40B53}|ExcelConsoleLocal\\ExcelConsoleLocal.csproj|C:\\Stage\\ExcelC#\\ExcelLocalBiblioC\\excelconsolelocal\\excelconsolelocal.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{B18827D6-0B13-4BCD-B133-371C24E40B53}|ExcelConsoleLocal\\ExcelConsoleLocal.csproj|solutionrelative:excelconsolelocal\\excelconsolelocal.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PutTimeCells.cs",
+              "DocumentMoniker": "C:\\Stage\\ExcelC#\\ExcelLocalBiblioC\\ExcelLocalBiblioC\\PutTimeCells.cs",
+              "RelativeDocumentMoniker": "ExcelLocalBiblioC\\PutTimeCells.cs",
+              "ToolTip": "C:\\Stage\\ExcelC#\\ExcelLocalBiblioC\\ExcelLocalBiblioC\\PutTimeCells.cs",
+              "RelativeToolTip": "ExcelLocalBiblioC\\PutTimeCells.cs",
+              "ViewState": "AQIAAH8BAAAAAAAAAAAswJoBAABoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-15T14:03:31.321Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ExcelCalculs.cs",
+              "DocumentMoniker": "C:\\Stage\\ExcelC#\\ExcelLocalBiblioC\\ExcelLocalBiblioC\\ExcelCalculs.cs",
+              "RelativeDocumentMoniker": "ExcelLocalBiblioC\\ExcelCalculs.cs",
+              "ToolTip": "C:\\Stage\\ExcelC#\\ExcelLocalBiblioC\\ExcelLocalBiblioC\\ExcelCalculs.cs",
+              "RelativeToolTip": "ExcelLocalBiblioC\\ExcelCalculs.cs",
+              "ViewState": "AQIAAIYAAAAAAAAAAAAAAJgAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-15T13:48:20.242Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ExcelFunctions.cs",
+              "DocumentMoniker": "C:\\Stage\\ExcelC#\\ExcelLocalBiblioC\\ExcelLocalBiblioC\\ExcelFunctions.cs",
+              "RelativeDocumentMoniker": "ExcelLocalBiblioC\\ExcelFunctions.cs",
+              "ToolTip": "C:\\Stage\\ExcelC#\\ExcelLocalBiblioC\\ExcelLocalBiblioC\\ExcelFunctions.cs",
+              "RelativeToolTip": "ExcelLocalBiblioC\\ExcelFunctions.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEgAAABYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-15T08:59:39.646Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ExcelStructure.cs",
+              "DocumentMoniker": "C:\\Stage\\ExcelC#\\ExcelLocalBiblioC\\ExcelLocalBiblioC\\ExcelStructure.cs",
+              "RelativeDocumentMoniker": "ExcelLocalBiblioC\\ExcelStructure.cs",
+              "ToolTip": "C:\\Stage\\ExcelC#\\ExcelLocalBiblioC\\ExcelLocalBiblioC\\ExcelStructure.cs",
+              "RelativeToolTip": "ExcelLocalBiblioC\\ExcelStructure.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAcwC0AAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-10T11:49:35.071Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Stage\\ExcelC#\\ExcelLocalBiblioC\\ExcelConsoleLocal\\Program.cs",
+              "RelativeDocumentMoniker": "ExcelConsoleLocal\\Program.cs",
+              "ToolTip": "C:\\Stage\\ExcelC#\\ExcelLocalBiblioC\\ExcelConsoleLocal\\Program.cs",
+              "RelativeToolTip": "ExcelConsoleLocal\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-10T12:22:44.414Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ExcelConsoleLocal.csproj",
+              "DocumentMoniker": "C:\\Stage\\ExcelC#\\ExcelLocalBiblioC\\ExcelConsoleLocal\\ExcelConsoleLocal.csproj",
+              "RelativeDocumentMoniker": "ExcelConsoleLocal\\ExcelConsoleLocal.csproj",
+              "ToolTip": "C:\\Stage\\ExcelC#\\ExcelLocalBiblioC\\ExcelConsoleLocal\\ExcelConsoleLocal.csproj",
+              "RelativeToolTip": "ExcelConsoleLocal\\ExcelConsoleLocal.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-06-10T12:27:52.899Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DataExcel.cs",
+              "DocumentMoniker": "C:\\Stage\\ExcelC#\\ExcelLocalBiblioC\\ExcelLocalBiblioC\\DataExcel.cs",
+              "RelativeDocumentMoniker": "ExcelLocalBiblioC\\DataExcel.cs",
+              "ToolTip": "C:\\Stage\\ExcelC#\\ExcelLocalBiblioC\\ExcelLocalBiblioC\\DataExcel.cs",
+              "RelativeToolTip": "ExcelLocalBiblioC\\DataExcel.cs",
+              "ViewState": "AQIAABgAAAAAAAAAAAAYwDIAAABHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-10T12:44:22.013Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

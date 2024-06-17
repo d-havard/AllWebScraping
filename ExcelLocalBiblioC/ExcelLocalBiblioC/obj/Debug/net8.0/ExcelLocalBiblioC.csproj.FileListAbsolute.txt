@@ -1,0 +1,12 @@
+C:\Stage\ExcelC#\ExcelLocalBiblioC\ExcelLocalBiblioC\obj\Debug\net8.0\ExcelLocalBiblioC.csproj.AssemblyReference.cache
+C:\Stage\ExcelC#\ExcelLocalBiblioC\ExcelLocalBiblioC\obj\Debug\net8.0\ExcelLocalBiblioC.GeneratedMSBuildEditorConfig.editorconfig
+C:\Stage\ExcelC#\ExcelLocalBiblioC\ExcelLocalBiblioC\obj\Debug\net8.0\ExcelLocalBiblioC.AssemblyInfoInputs.cache
+C:\Stage\ExcelC#\ExcelLocalBiblioC\ExcelLocalBiblioC\obj\Debug\net8.0\ExcelLocalBiblioC.AssemblyInfo.cs
+C:\Stage\ExcelC#\ExcelLocalBiblioC\ExcelLocalBiblioC\obj\Debug\net8.0\ExcelLocalBiblioC.csproj.CoreCompileInputs.cache
+C:\Stage\ExcelC#\ExcelLocalBiblioC\ExcelLocalBiblioC\bin\Debug\net8.0\ExcelLocalBiblioC.deps.json
+C:\Stage\ExcelC#\ExcelLocalBiblioC\ExcelLocalBiblioC\bin\Debug\net8.0\ExcelLocalBiblioC.dll
+C:\Stage\ExcelC#\ExcelLocalBiblioC\ExcelLocalBiblioC\bin\Debug\net8.0\ExcelLocalBiblioC.pdb
+C:\Stage\ExcelC#\ExcelLocalBiblioC\ExcelLocalBiblioC\obj\Debug\net8.0\ExcelLocalBiblioC.dll
+C:\Stage\ExcelC#\ExcelLocalBiblioC\ExcelLocalBiblioC\obj\Debug\net8.0\refint\ExcelLocalBiblioC.dll
+C:\Stage\ExcelC#\ExcelLocalBiblioC\ExcelLocalBiblioC\obj\Debug\net8.0\ExcelLocalBiblioC.pdb
+C:\Stage\ExcelC#\ExcelLocalBiblioC\ExcelLocalBiblioC\obj\Debug\net8.0\ref\ExcelLocalBiblioC.dll
