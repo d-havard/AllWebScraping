@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "h+mLml8Bu0Cllzbr5AiVE0CFMlE4q5ZNzyRnd/+VaQYY9oiPreNU0SpCyDDjU6SBlOXfcv/r6Mv6YSsJwwi3kw==",
+  "dgSpecHash": "IgL6guUWVO6AQZrtvh95DEkLphP8alnQnFUztWa2Wq17AGBolWOWXW0Mx0j9s+Yqle458wDK1t8huaFa8nb48A==",
   "success": true,
-  "projectFilePath": "N:\\Stage\\Virtual_game\\Webcsrap\\WebScrappingVirtualGame\\Console_WebScraping\\Console_WebScraping.csproj",
+  "projectFilePath": "N:\\Stage\\Virtual_game\\Webcsrap\\AllWebScraping_VirtualGame\\Console_WebScraping\\Console_WebScraping.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Yumi\\.nuget\\packages\\bitmiracle.libtiff.net\\2.4.649\\bitmiracle.libtiff.net.2.4.649.nupkg.sha512",
     "C:\\Users\\Yumi\\.nuget\\packages\\ironsoftware.common\\2024.1.7\\ironsoftware.common.2024.1.7.nupkg.sha512",
