@@ -4,6 +4,8 @@ using OpenQA.Selenium;
 using System.IO;
 using OpenQA.Selenium.DevTools.V123.Audits;
 using Microsoft.Playwright;
+using ExcelLocalBiblioC;
+using IronXL;
 
 namespace Console_WebScraping
 {
@@ -11,7 +13,11 @@ namespace Console_WebScraping
     {
         static async Task Main(string[] args)
         {
-            LocateFile locateFile = new LocateFile(@"D:\Stage\Virtual_game\Webcsrap\dataFormatts.xlsx", @"D:\Stage\Virtual_game\Webcsrap\WebScrappingVirtualGame\dataFormatts.xlsx");
+            string path = "N:\\Stage\\Virtual_game\\Webcsrap\\dataFormatts.xlsx";
+
+            LocateFile locateFile = new LocateFile(path, @"N:\Stage\Virtual_game\Webcsrap\AllWebScraping_VirtualGame\dataFormatts.xlsx");
+
+            ExcelStructure excelStructure = new ExcelStructure(path);
 
             LocateCell locateCell = new LocateCell();
 
@@ -23,9 +29,21 @@ namespace Console_WebScraping
             
             VerificationUrl verificationUrl = new VerificationUrl();
 
+            DataExcel dataExcel = new DataExcel();
+
             string nomSheet = verificationUrl.NameUrl("https://www.eva.gg/fr-FR/booking?locationId=24&gameId=1&currentDate=2024-06-17");
 
-            var sheet = locateFile.VerificationIfFileExist(nomSheet);
+            var sheet = excelStructure.VerificationIfFileExist("EVA RENNES");
+
+            Console.WriteLine("Piuuf");
+
+            excelStructure.CreateStructure(path);
+
+            Console.WriteLine("Piuuf");
+
+            dataExcel.PutDataExcel(sheet);
+
+            Console.WriteLine("Piuuf");
 
             List<string> JsonResponses = await navigator.LaunchNavigatorProcess("https://www.eva.gg/fr-FR/booking?locationId=24&gameId=1&currentDate=2024-06-17");
 
@@ -39,20 +57,36 @@ namespace Console_WebScraping
 
             string JsonFilePath = await takeInformation.GetJsonFile(JsonResponses);
 
+            Console.WriteLine("Piuuf");
+
             string DateFormat = await takeInformation.RearrangeDate(JsonFilePath);
+
+            Console.WriteLine("Piiif");
 
             await takeInformation.GetInformation(JsonFilePath);
 
+            Console.WriteLine("Pioif");
+
             List<string> StartedHours = takeInformation.GetStartedHour();
+
+            Console.WriteLine("Pfduf");
 
             List<int> MaximumPlayers = takeInformation.GetMaximumPlayer();
 
+            Console.WriteLine("Plef");
+
             List<int> NumberPlayers = takeInformation.GetNumberPlayer();
 
+            Console.WriteLine("Piauf");
+
             List<bool> BattlepassPlayers = takeInformation.GetBattlePassPlayer();
-            
+
+            Console.WriteLine("Piaf");
+
             List<bool> PeakHours = takeInformation.GetPeakHour();
-            
+
+            Console.WriteLine("Pief");
+
             int positionX = locateCell.locateCellXPosition(DateFormat, sheet);
             Console.WriteLine("paf");
             int [] positionY = locateCell.LocateCellYPosition(StartedHours, sheet);
@@ -61,7 +95,7 @@ namespace Console_WebScraping
             Console.WriteLine("pouf");
             fillCell.colorCell(MaximumPlayers, NumberPlayers, sheet, positionX, positionY, BattlepassPlayers, PeakHours);
             Console.WriteLine("pef");
-            locateFile.SaveFile(sheet);
+            excelStructure.SaveFile(path);
             
         }
     }

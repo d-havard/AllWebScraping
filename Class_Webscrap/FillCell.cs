@@ -47,14 +47,14 @@ namespace Class_Webscrap
             {
                 if (!peakHours[incrementPlayer])
                 {
-                    sheet.Rows[positionX].Columns[PositionY].Style.TopBorder.Type = BorderType.Thick;
-                    sheet.Rows[positionX].Columns[PositionY].Style.RightBorder.Type = BorderType.Thick;
-                    sheet.Rows[positionX].Columns[PositionY].Style.LeftBorder.Type = BorderType.Thick;
-                    sheet.Rows[positionX].Columns[PositionY].Style.BottomBorder.Type = BorderType.Thick;
-                    sheet.Rows[positionX].Columns[PositionY].Style.BottomBorder.Color = "#00ff02";
-                    sheet.Rows[positionX].Columns[PositionY].Style.LeftBorder.Color = "#00ff02";
-                    sheet.Rows[positionX].Columns[PositionY].Style.RightBorder.Color = "#00ff02";
-                    sheet.Rows[positionX].Columns[PositionY].Style.TopBorder.Color = "#00ff02";
+                    sheet.Columns[positionX].Rows[PositionY].Style.TopBorder.Type = BorderType.Thick;
+                    sheet.Columns[positionX].Rows[PositionY].Style.RightBorder.Type = BorderType.Thick;
+                    sheet.Columns[positionX].Rows[PositionY].Style.LeftBorder.Type = BorderType.Thick;
+                    sheet.Columns[positionX].Rows[PositionY].Style.BottomBorder.Type = BorderType.Thick;
+                    sheet.Columns[positionX].Rows[PositionY].Style.BottomBorder.Color = "#00ff02";
+                    sheet.Columns[positionX].Rows[PositionY].Style.LeftBorder.Color = "#00ff02";
+                    sheet.Columns[positionX].Rows[PositionY].Style.RightBorder.Color = "#00ff02";
+                    sheet.Columns[positionX].Rows[PositionY].Style.TopBorder.Color = "#00ff02";
 
                 }
                 if (sheet.Columns[positionX].Rows[PositionY].StringValue == "Priva")
@@ -63,18 +63,7 @@ namespace Class_Webscrap
                     sheet.Columns[positionX].Rows[PositionY].Style.Font.Height = 18;
                     sheet.Columns[positionX].Rows[PositionY].Style.VerticalAlignment = IronXL.Styles.VerticalAlignment.Center;
                     sheet.Columns[positionX].Rows[PositionY].Style.HorizontalAlignment = IronXL.Styles.HorizontalAlignment.Center;
-                    if (!peakHours[incrementPlayer])
-                    {
-                        sheet.Rows[positionX].Columns[PositionY].Style.TopBorder.Type = BorderType.Thick;
-                        sheet.Rows[positionX].Columns[PositionY].Style.RightBorder.Type = BorderType.Thick;
-                        sheet.Rows[positionX].Columns[PositionY].Style.LeftBorder.Type = BorderType.Thick;
-                        sheet.Rows[positionX].Columns[PositionY].Style.BottomBorder.Type = BorderType.Thick;
-                        sheet.Rows[positionX].Columns[PositionY].Style.BottomBorder.Color = "#00ff02";
-                        sheet.Rows[positionX].Columns[PositionY].Style.LeftBorder.Color = "#00ff02";
-                        sheet.Rows[positionX].Columns[PositionY].Style.RightBorder.Color = "#00ff02";
-                        sheet.Rows[positionX].Columns[PositionY].Style.TopBorder.Color = "#00ff02";
 
-                    }
                 }
                 else
                 {
@@ -86,18 +75,7 @@ namespace Class_Webscrap
                         sheet.Columns[positionX].Rows[PositionY].Style.Font.Height = 14;
                         sheet.Columns[positionX].Rows[PositionY].Style.VerticalAlignment = IronXL.Styles.VerticalAlignment.Center;
                         sheet.Columns[positionX].Rows[PositionY].Style.HorizontalAlignment = IronXL.Styles.HorizontalAlignment.Center;
-                        if (!peakHours[incrementPlayer])
-                        {
-                            sheet.Rows[positionX].Columns[PositionY].Style.TopBorder.Type = BorderType.Thick;
-                            sheet.Rows[positionX].Columns[PositionY].Style.RightBorder.Type = BorderType.Thick;
-                            sheet.Rows[positionX].Columns[PositionY].Style.LeftBorder.Type = BorderType.Thick;
-                            sheet.Rows[positionX].Columns[PositionY].Style.BottomBorder.Type = BorderType.Thick;
-                            sheet.Rows[positionX].Columns[PositionY].Style.BottomBorder.Color = "#00ff02";
-                            sheet.Rows[positionX].Columns[PositionY].Style.LeftBorder.Color = "#00ff02";
-                            sheet.Rows[positionX].Columns[PositionY].Style.RightBorder.Color = "#00ff02";
-                            sheet.Rows[positionX].Columns[PositionY].Style.TopBorder.Color = "#00ff02";
-
-                        }
+                        
                     }
 
                     else
@@ -108,18 +86,7 @@ namespace Class_Webscrap
                             sheet.Columns[positionX].Rows[PositionY].Style.Font.Height = 14;
                             sheet.Columns[positionX].Rows[PositionY].Style.VerticalAlignment = IronXL.Styles.VerticalAlignment.Center;
                             sheet.Columns[positionX].Rows[PositionY].Style.HorizontalAlignment = IronXL.Styles.HorizontalAlignment.Center;
-                            if (!peakHours[incrementPlayer])
-                            {
-                                sheet.Rows[positionX].Columns[PositionY].Style.TopBorder.Type = BorderType.Thick;
-                                sheet.Rows[positionX].Columns[PositionY].Style.RightBorder.Type = BorderType.Thick;
-                                sheet.Rows[positionX].Columns[PositionY].Style.LeftBorder.Type = BorderType.Thick;
-                                sheet.Rows[positionX].Columns[PositionY].Style.BottomBorder.Type = BorderType.Thick;
-                                sheet.Rows[positionX].Columns[PositionY].Style.BottomBorder.Color = "#00ff02";
-                                sheet.Rows[positionX].Columns[PositionY].Style.LeftBorder.Color = "#00ff02";
-                                sheet.Rows[positionX].Columns[PositionY].Style.RightBorder.Color = "#00ff02";
-                                sheet.Rows[positionX].Columns[PositionY].Style.TopBorder.Color = "#00ff02";
-
-                            }
+                           
                         }
                         if (colornumber < 0.5m)
                         {
@@ -127,18 +94,7 @@ namespace Class_Webscrap
                             sheet.Columns[positionX].Rows[PositionY].Style.Font.Height = 14;
                             sheet.Columns[positionX].Rows[PositionY].Style.VerticalAlignment = IronXL.Styles.VerticalAlignment.Center;
                             sheet.Columns[positionX].Rows[PositionY].Style.HorizontalAlignment = IronXL.Styles.HorizontalAlignment.Center;
-                            if (!peakHours[incrementPlayer])
-                            {
-                                sheet.Rows[positionX].Columns[PositionY].Style.TopBorder.Type = BorderType.Thick;
-                                sheet.Rows[positionX].Columns[PositionY].Style.RightBorder.Type = BorderType.Thick;
-                                sheet.Rows[positionX].Columns[PositionY].Style.LeftBorder.Type = BorderType.Thick;
-                                sheet.Rows[positionX].Columns[PositionY].Style.BottomBorder.Type = BorderType.Thick;
-                                sheet.Rows[positionX].Columns[PositionY].Style.BottomBorder.Color = "#00ff02";
-                                sheet.Rows[positionX].Columns[PositionY].Style.LeftBorder.Color = "#00ff02";
-                                sheet.Rows[positionX].Columns[PositionY].Style.RightBorder.Color = "#00ff02";
-                                sheet.Rows[positionX].Columns[PositionY].Style.TopBorder.Color = "#00ff02";
-
-                            }
+                            
                         }
                         if (colornumber > 0.5m && colornumber < 1m)
                         {
@@ -146,18 +102,7 @@ namespace Class_Webscrap
                             sheet.Columns[positionX].Rows[PositionY].Style.Font.Height = 14;
                             sheet.Columns[positionX].Rows[PositionY].Style.VerticalAlignment = IronXL.Styles.VerticalAlignment.Center;
                             sheet.Columns[positionX].Rows[PositionY].Style.HorizontalAlignment = IronXL.Styles.HorizontalAlignment.Center;
-                            if (!peakHours[incrementPlayer])
-                            {
-                                sheet.Rows[positionX].Columns[PositionY].Style.TopBorder.Type = BorderType.Thick;
-                                sheet.Rows[positionX].Columns[PositionY].Style.RightBorder.Type = BorderType.Thick;
-                                sheet.Rows[positionX].Columns[PositionY].Style.LeftBorder.Type = BorderType.Thick;
-                                sheet.Rows[positionX].Columns[PositionY].Style.BottomBorder.Type = BorderType.Thick;
-                                sheet.Rows[positionX].Columns[PositionY].Style.BottomBorder.Color = "#00ff02";
-                                sheet.Rows[positionX].Columns[PositionY].Style.LeftBorder.Color = "#00ff02";
-                                sheet.Rows[positionX].Columns[PositionY].Style.RightBorder.Color = "#00ff02";
-                                sheet.Rows[positionX].Columns[PositionY].Style.TopBorder.Color = "#00ff02";
-
-                            }
+                            
                         }
                         if (colornumber == 0.5m)
                         {
@@ -165,18 +110,7 @@ namespace Class_Webscrap
                             sheet.Columns[positionX].Rows[PositionY].Style.Font.Height = 14;
                             sheet.Columns[positionX].Rows[PositionY].Style.VerticalAlignment = IronXL.Styles.VerticalAlignment.Center;
                             sheet.Columns[positionX].Rows[PositionY].Style.HorizontalAlignment = IronXL.Styles.HorizontalAlignment.Center;
-                            if (!peakHours[incrementPlayer])
-                            {
-                                sheet.Rows[positionX].Columns[PositionY].Style.TopBorder.Type = BorderType.Thick;
-                                sheet.Rows[positionX].Columns[PositionY].Style.RightBorder.Type = BorderType.Thick;
-                                sheet.Rows[positionX].Columns[PositionY].Style.LeftBorder.Type = BorderType.Thick;
-                                sheet.Rows[positionX].Columns[PositionY].Style.BottomBorder.Type = BorderType.Thick;
-                                sheet.Rows[positionX].Columns[PositionY].Style.BottomBorder.Color = "#00ff02";
-                                sheet.Rows[positionX].Columns[PositionY].Style.LeftBorder.Color = "#00ff02";
-                                sheet.Rows[positionX].Columns[PositionY].Style.RightBorder.Color = "#00ff02";
-                                sheet.Rows[positionX].Columns[PositionY].Style.TopBorder.Color = "#00ff02";
-
-                            }
+                            
                         }
                     }
                     

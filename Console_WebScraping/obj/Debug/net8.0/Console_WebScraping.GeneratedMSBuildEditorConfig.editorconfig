@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Console_WebScraping
-build_property.ProjectDir = N:\Stage\Virtual_game\Webcsrap\WebScrappingVirtualGame\Console_WebScraping\
+build_property.ProjectDir = N:\Stage\Virtual_game\Webcsrap\AllWebScraping_VirtualGame\Console_WebScraping\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

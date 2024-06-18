@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "N:\\Stage\\Virtual_game\\Webcsrap\\WebScrappingVirtualGame\\Console_WebScraping\\Console_WebScraping.csproj": {}
+    "N:\\Stage\\Virtual_game\\Webcsrap\\AllWebScraping_VirtualGame\\Console_WebScraping\\Console_WebScraping.csproj": {}
   },
   "projects": {
-    "N:\\Stage\\Virtual_game\\Webcsrap\\WebScrappingVirtualGame\\Class_Webscrap\\Class_Webscrap.csproj": {
+    "N:\\Stage\\Virtual_game\\Webcsrap\\AllWebScraping_VirtualGame\\Class_Webscrap\\Class_Webscrap.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "N:\\Stage\\Virtual_game\\Webcsrap\\WebScrappingVirtualGame\\Class_Webscrap\\Class_Webscrap.csproj",
+        "projectUniqueName": "N:\\Stage\\Virtual_game\\Webcsrap\\AllWebScraping_VirtualGame\\Class_Webscrap\\Class_Webscrap.csproj",
         "projectName": "Class_Webscrap",
-        "projectPath": "N:\\Stage\\Virtual_game\\Webcsrap\\WebScrappingVirtualGame\\Class_Webscrap\\Class_Webscrap.csproj",
+        "projectPath": "N:\\Stage\\Virtual_game\\Webcsrap\\AllWebScraping_VirtualGame\\Class_Webscrap\\Class_Webscrap.csproj",
         "packagesPath": "C:\\Users\\Yumi\\.nuget\\packages\\",
-        "outputPath": "N:\\Stage\\Virtual_game\\Webcsrap\\WebScrappingVirtualGame\\Class_Webscrap\\obj\\",
+        "outputPath": "N:\\Stage\\Virtual_game\\Webcsrap\\AllWebScraping_VirtualGame\\Class_Webscrap\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -91,14 +91,14 @@
         }
       }
     },
-    "N:\\Stage\\Virtual_game\\Webcsrap\\WebScrappingVirtualGame\\Console_WebScraping\\Console_WebScraping.csproj": {
+    "N:\\Stage\\Virtual_game\\Webcsrap\\AllWebScraping_VirtualGame\\Console_WebScraping\\Console_WebScraping.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "N:\\Stage\\Virtual_game\\Webcsrap\\WebScrappingVirtualGame\\Console_WebScraping\\Console_WebScraping.csproj",
+        "projectUniqueName": "N:\\Stage\\Virtual_game\\Webcsrap\\AllWebScraping_VirtualGame\\Console_WebScraping\\Console_WebScraping.csproj",
         "projectName": "Console_WebScraping",
-        "projectPath": "N:\\Stage\\Virtual_game\\Webcsrap\\WebScrappingVirtualGame\\Console_WebScraping\\Console_WebScraping.csproj",
+        "projectPath": "N:\\Stage\\Virtual_game\\Webcsrap\\AllWebScraping_VirtualGame\\Console_WebScraping\\Console_WebScraping.csproj",
         "packagesPath": "C:\\Users\\Yumi\\.nuget\\packages\\",
-        "outputPath": "N:\\Stage\\Virtual_game\\Webcsrap\\WebScrappingVirtualGame\\Console_WebScraping\\obj\\",
+        "outputPath": "N:\\Stage\\Virtual_game\\Webcsrap\\AllWebScraping_VirtualGame\\Console_WebScraping\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -120,8 +120,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "N:\\Stage\\Virtual_game\\Webcsrap\\WebScrappingVirtualGame\\Class_Webscrap\\Class_Webscrap.csproj": {
-                "projectPath": "N:\\Stage\\Virtual_game\\Webcsrap\\WebScrappingVirtualGame\\Class_Webscrap\\Class_Webscrap.csproj"
+              "N:\\Stage\\Virtual_game\\Webcsrap\\AllWebScraping_VirtualGame\\Class_Webscrap\\Class_Webscrap.csproj": {
+                "projectPath": "N:\\Stage\\Virtual_game\\Webcsrap\\AllWebScraping_VirtualGame\\Class_Webscrap\\Class_Webscrap.csproj"
+              },
+              "N:\\Stage\\Virtual_game\\Webcsrap\\AllWebScraping_VirtualGame\\ExcelLocalBiblioC\\ExcelLocalBiblioC\\ExcelLocalBiblioC.csproj": {
+                "projectPath": "N:\\Stage\\Virtual_game\\Webcsrap\\AllWebScraping_VirtualGame\\ExcelLocalBiblioC\\ExcelLocalBiblioC\\ExcelLocalBiblioC.csproj"
               }
             }
           }
@@ -148,6 +151,77 @@
             "Microsoft.Playwright.NUnit": {
               "target": "Package",
               "version": "[1.44.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "N:\\Stage\\Virtual_game\\Webcsrap\\AllWebScraping_VirtualGame\\ExcelLocalBiblioC\\ExcelLocalBiblioC\\ExcelLocalBiblioC.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "N:\\Stage\\Virtual_game\\Webcsrap\\AllWebScraping_VirtualGame\\ExcelLocalBiblioC\\ExcelLocalBiblioC\\ExcelLocalBiblioC.csproj",
+        "projectName": "ExcelLocalBiblioC",
+        "projectPath": "N:\\Stage\\Virtual_game\\Webcsrap\\AllWebScraping_VirtualGame\\ExcelLocalBiblioC\\ExcelLocalBiblioC\\ExcelLocalBiblioC.csproj",
+        "packagesPath": "C:\\Users\\Yumi\\.nuget\\packages\\",
+        "outputPath": "N:\\Stage\\Virtual_game\\Webcsrap\\AllWebScraping_VirtualGame\\ExcelLocalBiblioC\\ExcelLocalBiblioC\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Yumi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "IronXL.Excel": {
+              "target": "Package",
+              "version": "[2024.6.1, )"
             }
           },
           "imports": [
