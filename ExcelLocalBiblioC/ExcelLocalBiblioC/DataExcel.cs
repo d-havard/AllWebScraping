@@ -49,22 +49,8 @@ namespace ExcelLocalBiblioC
             }
 
             int columnWhile = timeFunctions.PutActualDayInExcel(today);
+
             excelCalculs.CalculateTickets(today, columnWhile);
-
-            bool calculateCAPerDay = false;
-            int cellCAPerDAy = 2;
-
-            while (!calculateCAPerDay)
-            {
-                if (workSheet["C106"].IsEmpty == false)
-                {
-                    calculateCAPerDay = true;
-                }
-                else
-                {
-                    calculateCAPerDay = true;
-                }
-            }
         }
     }
 }

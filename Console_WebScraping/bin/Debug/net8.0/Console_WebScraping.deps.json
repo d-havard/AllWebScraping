@@ -559,7 +559,7 @@
           }
         }
       },
-      "Selenium.WebDriver.ChromeDriver/125.0.6422.14100": {},
+      "Selenium.WebDriver.ChromeDriver/126.0.6478.6100": {},
       "SixLabors.Fonts/2.0.3": {
         "runtime": {
           "lib/net6.0/SixLabors.Fonts.dll": {
@@ -694,7 +694,7 @@
           "Microsoft.Playwright": "1.44.0",
           "Microsoft.Playwright.NUnit": "1.44.0",
           "Selenium.WebDriver": "4.21.0",
-          "Selenium.WebDriver.ChromeDriver": "125.0.6422.14100"
+          "Selenium.WebDriver.ChromeDriver": "126.0.6478.6100"
         },
         "runtime": {
           "Class_Webscrap.dll": {}
@@ -926,12 +926,12 @@
       "path": "selenium.webdriver/4.21.0",
       "hashPath": "selenium.webdriver.4.21.0.nupkg.sha512"
     },
-    "Selenium.WebDriver.ChromeDriver/125.0.6422.14100": {
+    "Selenium.WebDriver.ChromeDriver/126.0.6478.6100": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-se5xpD77XKBb3i+YUieBUORi1W7RZ2EfggyVxCGfWaJpw7gPWh1vwGnUZ2cq4ggr5shDelUrpgH0LSzh9Lbstg==",
-      "path": "selenium.webdriver.chromedriver/125.0.6422.14100",
-      "hashPath": "selenium.webdriver.chromedriver.125.0.6422.14100.nupkg.sha512"
+      "sha512": "sha512-68Y0FHY++st9Xg+TI8FMGjz3xsuKjUc4QrC+Pi1uoZHDvulECqkiLBmvUvbQweDmITwsPf43LR21W44dhpwXgA==",
+      "path": "selenium.webdriver.chromedriver/126.0.6478.6100",
+      "hashPath": "selenium.webdriver.chromedriver.126.0.6478.6100.nupkg.sha512"
     },
     "SixLabors.Fonts/2.0.3": {
       "type": "package",

@@ -38,7 +38,7 @@ namespace ExcelLocalBiblioC
                 {
                     if (workSheet.Rows[6].Columns[columnWhile].IsEmpty && !dayPut)
                     {
-                        string[] cellDate = workSheet.Rows[6].Columns[columnWhile - 1].Value.ToString().Split(' ');
+                        string[] cellDate = workSheet.Rows[6].Columns[columnWhile + 1].Value.ToString().Split(' ');
                         if (workSheet.Rows[6].Columns[columnWhile + 1].IsEmpty && cellDate[0] != today)
                         {
                             int row = 6;
@@ -82,7 +82,7 @@ namespace ExcelLocalBiblioC
                                         {
                                             var cellAdress1Merge = workSheet.Rows[94].Columns[columnWhile].RangeAddressAsString;
                                             var cellAdress2Merge = workSheet.Rows[94].Columns[columnWhile + 6].RangeAddressAsString;
-                                            var mergeWeek = workSheet.Merge($"{cellAdress1Merge}:{cellAdress2Merge}");
+                                            //var mergeWeek = workSheet.Merge($"{cellAdress1Merge}:{cellAdress2Merge}");
                                             var cellAdress1Avg = workSheet.Rows[93].Columns[columnWhile].RangeAddressAsString;
                                             var cellAdress2Avg = workSheet.Rows[93].Columns[columnWhile + 6].RangeAddressAsString;
                                             var rangeAvg = workSheet[$"{cellAdress1Avg}:{cellAdress2Avg}"];
@@ -93,7 +93,7 @@ namespace ExcelLocalBiblioC
 
                                             var cellAdress1MergeCA = workSheet.Rows[109].Columns[columnWhile].RangeAddressAsString;
                                             var cellAdress2MergeCA = workSheet.Rows[109].Columns[columnWhile + 6].RangeAddressAsString;
-                                            var mergeWeekCA = workSheet.Merge($"{cellAdress1MergeCA}:{cellAdress2MergeCA}");
+                                            //var mergeWeekCA = workSheet.Merge($"{cellAdress1MergeCA}:{cellAdress2MergeCA}");
                                             var cellAdress1AvgCA = workSheet.Rows[109].Columns[columnWhile].RangeAddressAsString;
                                             var cellAdress2AvgCA = workSheet.Rows[109].Columns[columnWhile + 6].RangeAddressAsString;
                                             var rangeAvgCA = workSheet[$"{cellAdress1AvgCA}:{cellAdress2AvgCA}"];
@@ -189,13 +189,14 @@ namespace ExcelLocalBiblioC
                                             var cellAdress2Avg = workSheet.Rows[93].Columns[columnWhile + 4].RangeAddressAsString;
                                             var rangeAvg = workSheet[$"{cellAdress1Avg}:{cellAdress2Avg}"];
                                             var cellAdressString = workSheet.Rows[94].Columns[columnWhile].RangeAddressAsString;
+                                            workSheet[$"{cellAdressString}"].Value = rangeAvg.Avg();
                                             workSheet[$"{cellAdressString}"].Style.Font.Height = 18;
                                             workSheet[$"{cellAdressString}"].Style.Font.Bold = true;
                                             excelFunctions.CenterTextString(cellAdressString, workSheet);
 
                                             var cellAdress1MergeCA = workSheet.Rows[109].Columns[columnWhile].RangeAddressAsString;
                                             var cellAdress2MergeCA = workSheet.Rows[109].Columns[columnWhile + 4].RangeAddressAsString;
-                                            var mergeWeekCA = workSheet.Merge($"{cellAdress1MergeCA}:{cellAdress2MergeCA}");
+                                            //var mergeWeekCA = workSheet.Merge($"{cellAdress1MergeCA}:{cellAdress2MergeCA}");
                                             var cellAdress1AvgCA = workSheet.Rows[109].Columns[columnWhile].RangeAddressAsString;
                                             var cellAdress2AvgCA = workSheet.Rows[109].Columns[columnWhile + 4].RangeAddressAsString;
                                             var rangeAvgCA = workSheet[$"{cellAdress1AvgCA}:{cellAdress2AvgCA}"];
@@ -203,14 +204,6 @@ namespace ExcelLocalBiblioC
                                             workSheet[$"{cellAdressStringCA}"].Style.Font.Height = 18;
                                             workSheet[$"{cellAdressStringCA}"].Style.Font.Bold = true;
                                             excelFunctions.CenterTextString(cellAdressStringCA, workSheet);
-                                            if (workSheet[$"{cellAdressString}"].IsEmpty)
-                                            {
-
-                                            }
-                                            else
-                                            {
-                                                workSheet[$"{cellAdressString}"].Value = rangeAvg.Avg();
-                                            }
                                             weekPut = true;
                                         }
                                         else
@@ -337,7 +330,7 @@ namespace ExcelLocalBiblioC
                                         {
                                             var cellAdress1Merge = workSheet.Rows[94].Columns[columnWhile].RangeAddressAsString;
                                             var cellAdress2Merge = workSheet.Rows[94].Columns[columnWhile + 1].RangeAddressAsString;
-                                            var mergeWeek = workSheet.Merge($"{cellAdress1Merge}:{cellAdress2Merge}");
+                                            //var mergeWeek = workSheet.Merge($"{cellAdress1Merge}:{cellAdress2Merge}");
                                             var cellAdress1Avg = workSheet.Rows[93].Columns[columnWhile].RangeAddressAsString;
                                             var cellAdress2Avg = workSheet.Rows[93].Columns[columnWhile + 1].RangeAddressAsString;
                                             var rangeAvg = workSheet[$"{cellAdress1Avg}:{cellAdress2Avg}"];
@@ -348,7 +341,7 @@ namespace ExcelLocalBiblioC
 
                                             var cellAdress1MergeCA = workSheet.Rows[109].Columns[columnWhile].RangeAddressAsString;
                                             var cellAdress2MergeCA = workSheet.Rows[109].Columns[columnWhile + 1].RangeAddressAsString;
-                                            var mergeWeekCA = workSheet.Merge($"{cellAdress1MergeCA}:{cellAdress2MergeCA}");
+                                            //var mergeWeekCA = workSheet.Merge($"{cellAdress1MergeCA}:{cellAdress2MergeCA}");
                                             var cellAdress1AvgCA = workSheet.Rows[109].Columns[columnWhile].RangeAddressAsString;
                                             var cellAdress2AvgCA = workSheet.Rows[109].Columns[columnWhile + 1].RangeAddressAsString;
                                             var rangeAvgCA = workSheet[$"{cellAdress1AvgCA}:{cellAdress2AvgCA}"];
@@ -431,9 +424,30 @@ namespace ExcelLocalBiblioC
                                     }
                                     break;
 
+
+                            }
+                            DateTime date = DateTime.Now;
+                            string[] actualDayMonth = date.ToString().Split('/');
+                            var firstDayOfMonth = new DateTime(date.Year, date.Month, 1);
+                            var lastDayOfMonth = firstDayOfMonth.AddMonths(1).AddDays(-1);
+                            string[] firstDayMonth = firstDayOfMonth.ToString().Split('/');
+                            string[] lastDayMonth = lastDayOfMonth.ToString().Split('/');
+                            if (actualDayMonth[0] == firstDayMonth[0])
+                            {
+                                int dayMonthInt = Int32.Parse(firstDayMonth[0]);
+                                int lastDayMonthInt = Int32.Parse(lastDayMonth[0]);
+                                Console.WriteLine(dayMonthInt);
+                                Console.WriteLine(lastDayMonthInt);
+                                Console.WriteLine(firstDayOfMonth.ToString() + " / " + lastDayOfMonth.ToString());
+                                var cellAdressMergeMonth1 = workSheet.Rows[95].Columns[columnWhile].RangeAddressAsString;
+                                var cellAdressMergeMonth2 = workSheet.Rows[95].Columns[columnWhile + lastDayMonthInt - 1].RangeAddressAsString;
+                                workSheet.Merge($"{cellAdressMergeMonth1}:{cellAdressMergeMonth2}");
                             }
                             dayPut = true;
                         }
+                        
+                        
+
                     }
                 }
                 columnWhile++;

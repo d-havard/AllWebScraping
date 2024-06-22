@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "XfqMsE+bcXWF5YQNWMTm9WjtRjn4Lk3/4BdgttKrOe15O0v03ZM4zv839R8TCuEKHUNV1sZP91kNuznzGa4X0g==",
+  "dgSpecHash": "GlnoOOAqpUmyDqGjMlqK+kv6SoezffwQSrutifysqe2hyxAqwTDmtae71wAPK638ZVNKBf+oENjysk+IFSyCJw==",
   "success": true,
-  "projectFilePath": "C:\\Stage\\ExcelC#\\ExcelLocalBiblioC\\ExcelLocalBiblioC\\ExcelLocalBiblioC.csproj",
+  "projectFilePath": "C:\\Stage\\AllWebScraping_VirtualGame\\ExcelLocalBiblioC\\ExcelLocalBiblioC\\ExcelLocalBiblioC.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\dewih\\.nuget\\packages\\bitmiracle.libtiff.net\\2.4.649\\bitmiracle.libtiff.net.2.4.649.nupkg.sha512",
     "C:\\Users\\dewih\\.nuget\\packages\\ironsoftware.common\\2024.1.7\\ironsoftware.common.2024.1.7.nupkg.sha512",

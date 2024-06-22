@@ -1,0 +1,148 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Stage\\AllWebScraping_VirtualGame\\Class_Webscrap\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C1F32443-773D-4C98-B5B1-469D37DCA4F6}|..\\ExcelLocalBiblioC\\ExcelLocalBiblioC\\ExcelLocalBiblioC.csproj|c:\\stage\\allwebscraping_virtualgame\\excellocalbiblioc\\excellocalbiblioc\\dataexcel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67ADB785-968D-45E8-B974-C65E58F184E4}|..\\Console_WebScraping\\Console_WebScraping.csproj|c:\\stage\\allwebscraping_virtualgame\\console_webscraping\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C1F32443-773D-4C98-B5B1-469D37DCA4F6}|..\\ExcelLocalBiblioC\\ExcelLocalBiblioC\\ExcelLocalBiblioC.csproj|c:\\stage\\allwebscraping_virtualgame\\excellocalbiblioc\\excellocalbiblioc\\excelfunctions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EEEEBEC0-7BAD-45A1-B224-F93582E04FBA}|..\\ExcelLocalBiblioC\\ExcelConsoleLocal\\ExcelConsoleLocal.csproj|c:\\stage\\allwebscraping_virtualgame\\excellocalbiblioc\\excelconsolelocal\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C1F32443-773D-4C98-B5B1-469D37DCA4F6}|..\\ExcelLocalBiblioC\\ExcelLocalBiblioC\\ExcelLocalBiblioC.csproj|c:\\stage\\allwebscraping_virtualgame\\excellocalbiblioc\\excellocalbiblioc\\puttimecells.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C1F32443-773D-4C98-B5B1-469D37DCA4F6}|..\\ExcelLocalBiblioC\\ExcelLocalBiblioC\\ExcelLocalBiblioC.csproj|c:\\stage\\allwebscraping_virtualgame\\excellocalbiblioc\\excellocalbiblioc\\excelstructure.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\dewih\\AppData\\Local\\SourceServer\\8c458d896b7ec1eeff03deb99f9a4d43538384ebc352ea8cbcad1767a8010f91\\ExcelLocalBiblioC\\ExcelLocalBiblioC\\PutTimeCells.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\dewih\\AppData\\Local\\Temp\\.vsdbgsrc\\f0a42fc7879eb6bc2f76b3c20df63aa319fb5182601d0bba6f14889b4a1a0ea0\\ExcelCalculs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ExcelCalculs.cs",
+              "DocumentMoniker": "C:\\Users\\dewih\\AppData\\Local\\Temp\\.vsdbgsrc\\f0a42fc7879eb6bc2f76b3c20df63aa319fb5182601d0bba6f14889b4a1a0ea0\\ExcelCalculs.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\Users\\dewih\\AppData\\Local\\Temp\\.vsdbgsrc\\f0a42fc7879eb6bc2f76b3c20df63aa319fb5182601d0bba6f14889b4a1a0ea0\\ExcelCalculs.cs",
+              "ToolTip": "C:\\Users\\dewih\\AppData\\Local\\Temp\\.vsdbgsrc\\f0a42fc7879eb6bc2f76b3c20df63aa319fb5182601d0bba6f14889b4a1a0ea0\\ExcelCalculs.cs [Lecture seule]",
+              "RelativeToolTip": "..\\..\\..\\Users\\dewih\\AppData\\Local\\Temp\\.vsdbgsrc\\f0a42fc7879eb6bc2f76b3c20df63aa319fb5182601d0bba6f14889b4a1a0ea0\\ExcelCalculs.cs [Lecture seule]",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAB0AAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-22T15:08:51.523Z",
+              "EditorCaption": " [Lecture seule]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "PutTimeCells.cs",
+              "DocumentMoniker": "C:\\Users\\dewih\\AppData\\Local\\SourceServer\\8c458d896b7ec1eeff03deb99f9a4d43538384ebc352ea8cbcad1767a8010f91\\ExcelLocalBiblioC\\ExcelLocalBiblioC\\PutTimeCells.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\Users\\dewih\\AppData\\Local\\SourceServer\\8c458d896b7ec1eeff03deb99f9a4d43538384ebc352ea8cbcad1767a8010f91\\ExcelLocalBiblioC\\ExcelLocalBiblioC\\PutTimeCells.cs",
+              "ToolTip": "C:\\Users\\dewih\\AppData\\Local\\SourceServer\\8c458d896b7ec1eeff03deb99f9a4d43538384ebc352ea8cbcad1767a8010f91\\ExcelLocalBiblioC\\ExcelLocalBiblioC\\PutTimeCells.cs [Lecture seule]",
+              "RelativeToolTip": "..\\..\\..\\Users\\dewih\\AppData\\Local\\SourceServer\\8c458d896b7ec1eeff03deb99f9a4d43538384ebc352ea8cbcad1767a8010f91\\ExcelLocalBiblioC\\ExcelLocalBiblioC\\PutTimeCells.cs [Lecture seule]",
+              "ViewState": "AQIAAKMBAAAAAAAAAADwv7IBAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-30T22:11:25.789Z",
+              "EditorCaption": " [Lecture seule]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ExcelStructure.cs",
+              "DocumentMoniker": "C:\\Stage\\AllWebScraping_VirtualGame\\ExcelLocalBiblioC\\ExcelLocalBiblioC\\ExcelStructure.cs",
+              "RelativeDocumentMoniker": "..\\ExcelLocalBiblioC\\ExcelLocalBiblioC\\ExcelStructure.cs",
+              "ToolTip": "C:\\Stage\\AllWebScraping_VirtualGame\\ExcelLocalBiblioC\\ExcelLocalBiblioC\\ExcelStructure.cs",
+              "RelativeToolTip": "..\\ExcelLocalBiblioC\\ExcelLocalBiblioC\\ExcelStructure.cs",
+              "ViewState": "AQIAAB0AAAAAAAAAAAAAwC0AAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-19T15:26:46.934Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ExcelFunctions.cs",
+              "DocumentMoniker": "C:\\Stage\\AllWebScraping_VirtualGame\\ExcelLocalBiblioC\\ExcelLocalBiblioC\\ExcelFunctions.cs",
+              "RelativeDocumentMoniker": "..\\ExcelLocalBiblioC\\ExcelLocalBiblioC\\ExcelFunctions.cs",
+              "ToolTip": "C:\\Stage\\AllWebScraping_VirtualGame\\ExcelLocalBiblioC\\ExcelLocalBiblioC\\ExcelFunctions.cs",
+              "RelativeToolTip": "..\\ExcelLocalBiblioC\\ExcelLocalBiblioC\\ExcelFunctions.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAE8AAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-19T15:34:36.051Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Stage\\AllWebScraping_VirtualGame\\Console_WebScraping\\Program.cs",
+              "RelativeDocumentMoniker": "..\\Console_WebScraping\\Program.cs",
+              "ToolTip": "C:\\Stage\\AllWebScraping_VirtualGame\\Console_WebScraping\\Program.cs",
+              "RelativeToolTip": "..\\Console_WebScraping\\Program.cs",
+              "ViewState": "AQIAAEkAAAAAAAAAAAAQwCkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-18T12:10:44.247Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DataExcel.cs",
+              "DocumentMoniker": "C:\\Stage\\AllWebScraping_VirtualGame\\ExcelLocalBiblioC\\ExcelLocalBiblioC\\DataExcel.cs",
+              "RelativeDocumentMoniker": "..\\ExcelLocalBiblioC\\ExcelLocalBiblioC\\DataExcel.cs",
+              "ToolTip": "C:\\Stage\\AllWebScraping_VirtualGame\\ExcelLocalBiblioC\\ExcelLocalBiblioC\\DataExcel.cs",
+              "RelativeToolTip": "..\\ExcelLocalBiblioC\\ExcelLocalBiblioC\\DataExcel.cs",
+              "ViewState": "AQIAACQAAAAAAAAAAAAEwDQAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-18T14:39:44.961Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PutTimeCells.cs",
+              "DocumentMoniker": "C:\\Stage\\AllWebScraping_VirtualGame\\ExcelLocalBiblioC\\ExcelLocalBiblioC\\PutTimeCells.cs",
+              "RelativeDocumentMoniker": "..\\ExcelLocalBiblioC\\ExcelLocalBiblioC\\PutTimeCells.cs",
+              "ToolTip": "C:\\Stage\\AllWebScraping_VirtualGame\\ExcelLocalBiblioC\\ExcelLocalBiblioC\\PutTimeCells.cs",
+              "RelativeToolTip": "..\\ExcelLocalBiblioC\\ExcelLocalBiblioC\\PutTimeCells.cs",
+              "ViewState": "AQIAAIYBAAAAAAAAAAAAAKEBAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-19T08:22:12.499Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Stage\\AllWebScraping_VirtualGame\\ExcelLocalBiblioC\\ExcelConsoleLocal\\Program.cs",
+              "RelativeDocumentMoniker": "..\\ExcelLocalBiblioC\\ExcelConsoleLocal\\Program.cs",
+              "ToolTip": "C:\\Stage\\AllWebScraping_VirtualGame\\ExcelLocalBiblioC\\ExcelConsoleLocal\\Program.cs",
+              "RelativeToolTip": "..\\ExcelLocalBiblioC\\ExcelConsoleLocal\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-18T12:10:41.511Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

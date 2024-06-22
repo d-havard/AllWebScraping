@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ExcelLocalBiblioC")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f638d7ebba19da9d3e86363087e8d2f59ad213d8")]
 [assembly: System.Reflection.AssemblyProductAttribute("ExcelLocalBiblioC")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ExcelLocalBiblioC")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
