@@ -281,40 +281,47 @@ namespace ExcelLocalBiblioC
                             var cellForRangeCA1 = workSheet.Rows[107].Columns[columnWhileTickets - actualDayMonthInt + 1].RangeAddressAsString;
                             var cellForRangeCA2 = workSheet.Rows[107].Columns[columnWhileTickets - actualDayMonthInt + lastDayMonthInt].RangeAddressAsString;
                             var rangeMonthlyCA = workSheet[$"{cellForRangeCA1}:{cellForRangeCA2}"];
+                            var cellForRangeSelledTickets1 = workSheet.Rows[99].Columns[columnWhileTickets - actualDayMonthInt + 1].RangeAddressAsString;
+                            var cellForRangeSelledTickets2 = workSheet.Rows[99].Columns[columnWhileTickets - actualDayMonthInt + lastDayMonthInt].RangeAddressAsString;
+                            var rangeMonthlySelledTickets = workSheet[$"{cellForRangeSelledTickets1}:{cellForRangeSelledTickets2}"];
                             workSheet.Rows[95].Columns[columnWhileTickets - actualDayMonthInt + 1].Value = rangeMonthlyTR.Avg();
                             workSheet.Rows[111].Columns[columnWhileTickets - actualDayMonthInt + 1].Value = rangeMonthlyCA.Sum();
                             workSheet.Rows[95].Columns[columnWhileTickets - actualDayMonthInt + 1].FormatString = BuiltinFormats.Percent2;
-                            
+                            var test = rangeMonthlySelledTickets.Sum();
 
+                            
                             int columnWhilePutTR = 2;
                             bool putTRMonthly = false;
                             while (!putTRMonthly)
-                            {                              
-                                var actualMonth = workSheet.Rows[102].Columns[columnWhilePutTR].Value;
-                                
+                            {
+                                workSheet.Rows[102].Columns[columnWhilePutTR].FormatString = BuiltinFormats.Accounting0;
+                                var actualMonth = date.Month;
+                                var cellMonthObject = workSheet.Rows[102].Columns[columnWhilePutTR].Value;
+                                int cellMonthInt = Int32.Parse(cellMonthObject.ToString());
+                                workSheet.Rows[100].Columns[columnWhilePutTR].Value = test;
                                 if (workSheet.Rows[101].Columns[columnWhilePutTR].IsEmpty && workSheet.Rows[102].Columns[columnWhilePutTR].IsEmpty)
                                 {
 
                                     workSheet.Rows[102].Columns[columnWhilePutTR].Value = date.Month;
                                     workSheet.Rows[101].Columns[columnWhilePutTR].FormatString = BuiltinFormats.Percent2;
                                     workSheet.Rows[101].Columns[columnWhilePutTR].Value = rangeMonthlyTR.Avg();
+                                    excelFunctions.CenterTextInt(101, columnWhilePutTR, workSheet);
+                                    workSheet.Rows[100].Columns[columnWhilePutTR].Value = test;
                                     workSheet.Rows[101].Columns[columnWhilePutTR].Style.Font.Height = 18;
                                     workSheet.Rows[101].Columns[columnWhilePutTR].Style.Font.Bold = true;
+                                    workSheet.Rows[100].Columns[columnWhilePutTR].Style.Font.Height = 18;
+                                    workSheet.Rows[100].Columns[columnWhilePutTR].Style.Font.Bold = true;
                                     putTRMonthly = true;
                                     
                                 }
                                 else
                                 {
-                                    if (workSheet.Rows[102].Columns[columnWhilePutTR].Value == actualMonth)
+                                    if (cellMonthInt == actualMonth)
                                     {
                                         workSheet.Rows[101].Columns[columnWhilePutTR].FormatString = BuiltinFormats.Percent2;
                                         workSheet.Rows[101].Columns[columnWhilePutTR].Value = rangeMonthlyTR.Avg();
-                                        workSheet.Rows[101].Columns[columnWhilePutTR].Style.Font.Height = 18;
-                                        workSheet.Rows[101].Columns[columnWhilePutTR].Style.Font.Bold = true;
-                                        putTRMonthly = true;
-                                    }
-                                    else
-                                    {
+                                        workSheet.Rows[100].Columns[columnWhilePutTR].FormatString = BuiltinFormats.Accounting0;
+                                        workSheet.Rows[100].Columns[columnWhilePutTR].Value = rangeMonthlySelledTickets.Sum();
                                         putTRMonthly = true;
                                     }
                                 }
