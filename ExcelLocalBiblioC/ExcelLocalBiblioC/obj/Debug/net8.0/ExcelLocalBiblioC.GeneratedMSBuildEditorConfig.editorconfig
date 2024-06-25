@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = ExcelLocalBiblioC
-build_property.ProjectDir = C:\Stage\ExcelC#\ExcelLocalBiblioC\ExcelLocalBiblioC\
+build_property.ProjectDir = C:\Stage\AllWebScraping_VirtualGame\ExcelLocalBiblioC\ExcelLocalBiblioC\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

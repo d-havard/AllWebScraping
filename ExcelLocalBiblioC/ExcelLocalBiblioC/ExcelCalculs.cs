@@ -14,26 +14,52 @@ namespace ExcelLocalBiblioC
     {
         WorkSheet workSheet;
         ExcelFunctions excelFunctions;
-        DateTime currentDay;
+        PutTimeCells timeFunctions;
+       
         public ExcelCalculs(WorkSheet workSheet) 
         {
+            
             this.workSheet = workSheet;
-            this.excelFunctions = new ExcelFunctions(workSheet);
-            DateTime currentDay = DateTime.Today;
         }
 
-        public void CalculateTickets(string today, int columnWhile)
+        public void CalculateTickets(int columnWhile)
         {
+            ExcelFunctions excelFunctions = new ExcelFunctions(workSheet);
+            PutTimeCells timeFunctions = new PutTimeCells(workSheet);
+            int year = DateTime.Now.Year;
+            int month = DateTime.Now.Month;
+            int day = DateTime.Now.Day;
+            string zeroBeforeTenDay = "0";
+            string zeroBeforeTenMonth = "0";
+            string todayForTickets = $"{zeroBeforeTenDay}{day}/{zeroBeforeTenMonth}{month}/{year}";
 
+            if (day < 10 && month < 10)
+            {
+                todayForTickets = $"{zeroBeforeTenMonth}{day}/{zeroBeforeTenMonth}{month}/{year}";
+            }
+            if (day < 10 && month >= 10)
+            {
+                todayForTickets = $"{zeroBeforeTenDay}{day}/{month}/{year}";
+            }
+            if (day >= 10 && month < 10)
+            {
+                todayForTickets = $"{day}/{zeroBeforeTenMonth}{month}/{year}";
+            }
+            if (day >= 10 && month >= 10)
+            {
+                todayForTickets = $"{day}/{month}/{year}";
+            }
             decimal ticketsVendus = 0;
             decimal ticketsDispos = 0;
             int columnWhileTickets = 2;
             bool calculatedTickets = false;
+            DateTime currentDay = DateTime.Today;
+            bool monthTRPut = false;
 
             while (!calculatedTickets)
             {
                 string[] cellDay = workSheet.Rows[6].Columns[columnWhileTickets].Value.ToString().Split(' ');
-                if (cellDay[0] == today)
+                if (cellDay[0] == todayForTickets)
                 {
                     for (int i = 8; i < 92; i++)
                     {
@@ -55,7 +81,8 @@ namespace ExcelLocalBiblioC
                     if (ticketsDispos > 0)
                     {
                         workSheet.Rows[93].Columns[columnWhileTickets].FormatString = BuiltinFormats.Percent2;
-                        workSheet.Rows[93].Columns[columnWhileTickets].Value = ticketsVendus / ticketsDispos;
+                        decimal tauxRemplissageJourna = ticketsVendus / ticketsDispos;
+                        workSheet.Rows[93].Columns[columnWhileTickets].Value = tauxRemplissageJourna;
                         workSheet.Rows[93].Columns[columnWhileTickets].Style.Font.Height = 15;
                         workSheet.Rows[93].Columns[columnWhileTickets].Style.Font.Bold = true;
                         excelFunctions.BodersThinInt(93, columnWhileTickets, workSheet);
@@ -81,8 +108,40 @@ namespace ExcelLocalBiblioC
 
                     var cellValue = workSheet.Rows[99].Columns[columnWhileTickets].Value;
                     decimal numberSelledTickets = Convert.ToDecimal(cellValue);
+                    decimal CAperDay = 0;
+                    decimal ticketsInCell = 0;
+                    for (int i = 8; i < 92; i++)
+                    {
+                        if (workSheet.Rows[i].Columns[columnWhileTickets].IsEmpty)
+                        {
 
-                    workSheet.Rows[107].Columns[columnWhileTickets].Value = numberSelledTickets * 20;
+                        }
+                        else 
+                        {
+                            if (workSheet.Rows[i].Columns[columnWhileTickets].Style.RightBorder.Color == "#00ff02")
+                            {
+                                if (workSheet.Rows[i].Columns[columnWhileTickets].ToString().Contains('/'))
+                                {
+                                    string[] ticketsInCellSplit = workSheet.Rows[i].Columns[columnWhileTickets].ToString().Split('/');
+                                    ticketsInCell = Convert.ToDecimal(ticketsInCellSplit[0]);
+                                    CAperDay += (ticketsInCell * 20);
+                                }
+                                
+                            }
+                            else
+                            {
+                                if (workSheet.Rows[i].Columns[columnWhileTickets].ToString().Contains('/'))
+                                {
+                                    string[] ticketsInCellSplit = workSheet.Rows[i].Columns[columnWhileTickets].ToString().Split('/');
+                                    ticketsInCell = Convert.ToDecimal(ticketsInCellSplit[0]);
+                                    CAperDay += (ticketsInCell * 23);
+                                }
+                            }
+                            
+                        }
+                    }
+
+                    workSheet.Rows[107].Columns[columnWhileTickets].Value = CAperDay;
                     workSheet.Rows[107].Columns[columnWhileTickets].Style.Font.Height = 14;
                     workSheet.Rows[107].Columns[columnWhileTickets].Style.Font.Bold = true;
                     excelFunctions.BodersThinInt(107, columnWhileTickets, workSheet);
@@ -93,73 +152,179 @@ namespace ExcelLocalBiblioC
                     while (!calculatedTicketsWeek)
                     {
                         string dayForCalculateCA = currentDay.DayOfWeek.ToString();
-                        switch (dayForCalculateCA)
+                        if (cellDay[0] == todayForTickets)
                         {
-                            case "Monday":
+                            switch (dayForCalculateCA)
+                            {
+                                case "Monday":
+
+                                    workSheet.Rows[94].Columns[columnWhileTickets].FormatString = BuiltinFormats.Percent2;
+                                    if (ticketsDispos > 0)
+                                    {
+                                        workSheet.Rows[94].Columns[columnWhileTickets].Value = ticketsVendus / ticketsDispos;
+                                    }
+                                    workSheet.Rows[94].Columns[columnWhileTickets].Style.Font.Height = 15;
+                                    workSheet.Rows[94].Columns[columnWhileTickets].Style.Font.Bold = true;
+                                    excelFunctions.BodersThinInt(94, columnWhileTickets, workSheet);
+                                    excelFunctions.PutBordersBlackInt(94, columnWhile, workSheet);
+                                    excelFunctions.CenterTextInt(94, columnWhileTickets, workSheet);
+
+                                    workSheet.Rows[109].Columns[columnWhileTickets].Value = workSheet.Rows[107].Columns[columnWhileTickets];
+                                    workSheet.Rows[109].Columns[columnWhileTickets].Style.Font.Height = 14;
+                                    workSheet.Rows[109].Columns[columnWhileTickets].Style.Font.Bold = true;
+                                    workSheet.Rows[109].Columns[columnWhileTickets].Style.VerticalAlignment = VerticalAlignment.Center;
+                                    excelFunctions.BodersThinInt(109, columnWhileTickets, workSheet);
+                                    excelFunctions.CenterTextInt(109, columnWhileTickets, workSheet);
+                                    excelFunctions.PutBordersBlackInt(109, columnWhile, workSheet);
+
+                                    break;
+
+                                case "Tuesday":
+                                    int columnMergedTuesday = columnWhileTickets - 1;
+                                    var cellAdress1TuesdaySum = workSheet.Rows[107].Columns[columnWhileTickets - 1].RangeAddressAsString;
+                                    var cellAdress2TuesdaySum = workSheet.Rows[107].Columns[columnWhileTickets].RangeAddressAsString;
+                                    var rangeTuesdayCA = workSheet[$"{cellAdress1TuesdaySum}:{cellAdress2TuesdaySum}"];
+
+                                    var cellAdress1TuesdayAvg = workSheet.Rows[93].Columns[columnWhileTickets - 1].RangeAddressAsString;
+                                    var cellAdress2TuesdayAvg = workSheet.Rows[93].Columns[columnWhileTickets].RangeAddressAsString;
+                                    var rangeTuesdayAvg = workSheet[$"{cellAdress1TuesdayAvg}:{cellAdress2TuesdayAvg}"];
+
+                                    workSheet.Rows[109].Columns[columnMergedTuesday].Value = rangeTuesdayCA.Sum();
+                                    workSheet.Rows[94].Columns[columnMergedTuesday].Value = rangeTuesdayAvg.Avg();
+                                    break;
+
+                                case "Wednesday":
+                                    int columnMergedWednesday = columnWhileTickets - 2;
+                                    var cellAdress1WednesdaySum = workSheet.Rows[107].Columns[columnWhileTickets - 2].RangeAddressAsString;
+                                    var cellAdress2WednesdaySum = workSheet.Rows[107].Columns[columnWhileTickets].RangeAddressAsString;
+                                    var rangeWednesdayCA = workSheet[$"{cellAdress1WednesdaySum}:{cellAdress2WednesdaySum}"];
+
+                                    var cellAdress1WednesdayAvg = workSheet.Rows[93].Columns[columnWhileTickets - 2].RangeAddressAsString;
+                                    var cellAdress2WednesdayAvg = workSheet.Rows[93].Columns[columnWhileTickets].RangeAddressAsString;
+                                    var rangeWednesdayAvg = workSheet[$"{cellAdress1WednesdayAvg}:{cellAdress2WednesdayAvg}"];
+
+                                    workSheet.Rows[109].Columns[columnMergedWednesday].Value = rangeWednesdayCA.Sum();
+                                    workSheet.Rows[94].Columns[columnMergedWednesday].Value = rangeWednesdayAvg.Avg();
+                                    break;
+
+                                case "Thursday":
+                                    int columnMergedThursday = columnWhileTickets - 3;
+                                    var cellAdress1ThursdaySum = workSheet.Rows[107].Columns[columnWhileTickets - 3].RangeAddressAsString;
+                                    var cellAdress2ThursdaySum = workSheet.Rows[107].Columns[columnWhileTickets].RangeAddressAsString;
+                                    var rangeThursdayCA = workSheet[$"{cellAdress1ThursdaySum}:{cellAdress2ThursdaySum}"];
+
+                                    var cellAdress1ThursdayAvg = workSheet.Rows[93].Columns[columnWhileTickets - 3].RangeAddressAsString;
+                                    var cellAdress2ThursdayAvg = workSheet.Rows[93].Columns[columnWhileTickets].RangeAddressAsString;
+                                    var rangeThursdayAvg = workSheet[$"{cellAdress1ThursdayAvg}:{cellAdress2ThursdayAvg}"];
+
+                                    workSheet.Rows[109].Columns[columnMergedThursday].Value = rangeThursdayCA.Sum();
+                                    workSheet.Rows[94].Columns[columnMergedThursday].Value = rangeThursdayAvg.Avg();
+                                    break;
+
+                                case "Friday":
+                                    int columnMergedFriday = columnWhileTickets - 4;
+                                    var cellAdress1FridaySum = workSheet.Rows[107].Columns[columnWhileTickets - 4].RangeAddressAsString;
+                                    var cellAdress2FridaySum = workSheet.Rows[107].Columns[columnWhileTickets].RangeAddressAsString;
+                                    var rangeFridayCA = workSheet[$"{cellAdress1FridaySum}:{cellAdress2FridaySum}"];
+
+                                    var cellAdress1FridayAvg = workSheet.Rows[93].Columns[columnWhile - 4].RangeAddressAsString;
+                                    var cellAdress2FridayAvg = workSheet.Rows[93].Columns[columnWhile].RangeAddressAsString;
+                                    var rangeFridayAvg = workSheet[$"{cellAdress1FridayAvg}:{cellAdress2FridayAvg}"];
+
+                                    workSheet.Rows[109].Columns[columnMergedFriday].Value = rangeFridayCA.Sum();
+                                    workSheet.Rows[94].Columns[columnMergedFriday].Value = rangeFridayAvg.Avg();
+                                    break;
+
+                                case "Saturday":
+                                    int columnMergedSaturday = columnWhileTickets - 5;
+                                    var cellAdress1SaturdaySum = workSheet.Rows[107].Columns[columnWhileTickets - 5].RangeAddressAsString;
+                                    var cellAdress2SaturdaySum = workSheet.Rows[107].Columns[columnWhileTickets].RangeAddressAsString;
+                                    var rangeSaturdayCA = workSheet[$"{cellAdress1SaturdaySum}:{cellAdress2SaturdaySum}"];
+
+                                    var cellAdress1SaturdayAvg = workSheet.Rows[93].Columns[columnWhile - 5].RangeAddressAsString;
+                                    var cellAdress2SaturdayAvg = workSheet.Rows[93].Columns[columnWhile].RangeAddressAsString;
+                                    var rangeSaturdayAvg = workSheet[$"{cellAdress1SaturdayAvg}:{cellAdress2SaturdayAvg}"];
+
+                                    workSheet.Rows[109].Columns[columnMergedSaturday].Value = rangeSaturdayCA.Sum();
+                                    workSheet.Rows[94].Columns[columnMergedSaturday].Value = rangeSaturdayAvg.Avg();
+                                    break;
+
+                                case "Sunday":
+                                    int columnMergedSunday = columnWhileTickets - 6;
+                                    var cellAdress1SundaySum = workSheet.Rows[107].Columns[columnWhileTickets - 6].RangeAddressAsString;
+                                    var cellAdress2SundaySum = workSheet.Rows[107].Columns[columnWhileTickets].RangeAddressAsString;
+                                    var rangeSundayCA = workSheet[$"{cellAdress1SundaySum}:{cellAdress2SundaySum}"];
+
+                                    var cellAdress1SundayAvg = workSheet.Rows[93].Columns[columnWhile - 6].RangeAddressAsString;
+                                    var cellAdress2SundayAvg = workSheet.Rows[93].Columns[columnWhile - 6].RangeAddressAsString;
+                                    var rangeSundayAvg = workSheet[$"{cellAdress1SundayAvg}:{cellAdress2SundayAvg}"];
+
+                                    workSheet.Rows[109].Columns[columnMergedSunday].Value = rangeSundayCA.Sum();
+                                    workSheet.Rows[94].Columns[columnMergedSunday].Value = rangeSundayAvg.Avg();
+                                    break;
+                            }
+                            DateTime date = DateTime.Now;
+                            string[] actualDayMonth = date.ToString().Split('/');
+                            var firstDayOfMonth = new DateTime(date.Year, date.Month, 1);
+                            var lastDayOfMonth = firstDayOfMonth.AddMonths(1).AddDays(-1);
+                            string[] firstDayMonth = firstDayOfMonth.ToString().Split('/');
+                            string[] lastDayMonth = lastDayOfMonth.ToString().Split('/');
+                            int dayMonthInt = Int32.Parse(firstDayMonth[0]);
+                            int lastDayMonthInt = Int32.Parse(lastDayMonth[0]);
+                            int actualDayMonthInt = Int32.Parse(actualDayMonth[0]);
+                            Console.WriteLine(dayMonthInt);
+                            Console.WriteLine(lastDayMonthInt);
+                            Console.WriteLine(firstDayOfMonth.ToString() + " / " + lastDayOfMonth.ToString());
+                            var cellForRangeTR1 = workSheet.Rows[94].Columns[columnWhileTickets - actualDayMonthInt + 1].RangeAddressAsString;
+                            var cellForRangeTR2 = workSheet.Rows[94].Columns[columnWhileTickets - actualDayMonthInt + lastDayMonthInt].RangeAddressAsString;
+                            var rangeMonthlyTR = workSheet[$"{cellForRangeTR1}:{cellForRangeTR2}"];
+                            var cellForRangeCA1 = workSheet.Rows[107].Columns[columnWhileTickets - actualDayMonthInt + 1].RangeAddressAsString;
+                            var cellForRangeCA2 = workSheet.Rows[107].Columns[columnWhileTickets - actualDayMonthInt + lastDayMonthInt].RangeAddressAsString;
+                            var rangeMonthlyCA = workSheet[$"{cellForRangeCA1}:{cellForRangeCA2}"];
+                            workSheet.Rows[95].Columns[columnWhileTickets - actualDayMonthInt + 1].Value = rangeMonthlyTR.Avg();
+                            workSheet.Rows[111].Columns[columnWhileTickets - actualDayMonthInt + 1].Value = rangeMonthlyCA.Sum();
+                            workSheet.Rows[95].Columns[columnWhileTickets - actualDayMonthInt + 1].FormatString = BuiltinFormats.Percent2;
+                            
+
+                            int columnWhilePutTR = 2;
+                            bool putTRMonthly = false;
+                            while (!putTRMonthly)
+                            {                              
+                                var actualMonth = workSheet.Rows[102].Columns[columnWhilePutTR].Value;
                                 
-                                workSheet.Rows[94].Columns[columnWhileTickets].FormatString = BuiltinFormats.Percent2;
-                                workSheet.Rows[94].Columns[columnWhileTickets].Value = ticketsVendus / ticketsDispos;
-                                workSheet.Rows[94].Columns[columnWhileTickets].Style.Font.Height = 15;
-                                workSheet.Rows[94].Columns[columnWhileTickets].Style.Font.Bold = true;
-                                excelFunctions.BodersThinInt(94, columnWhileTickets, workSheet);
-                                excelFunctions.PutBordersBlackInt(94, columnWhile, workSheet);
-                                excelFunctions.CenterTextInt(94, columnWhileTickets, workSheet);
+                                if (workSheet.Rows[101].Columns[columnWhilePutTR].IsEmpty && workSheet.Rows[102].Columns[columnWhilePutTR].IsEmpty)
+                                {
 
-                                workSheet.Rows[109].Columns[columnWhileTickets].Value = workSheet.Rows[107].Columns[columnWhileTickets];
-                                workSheet.Rows[109].Columns[columnWhileTickets].Style.Font.Height = 14;
-                                workSheet.Rows[109].Columns[columnWhileTickets].Style.Font.Bold = true;
-                                workSheet.Rows[109].Columns[columnWhileTickets].Style.VerticalAlignment = VerticalAlignment.Center;
-                                excelFunctions.BodersThinInt(109, columnWhileTickets, workSheet);
-                                excelFunctions.CenterTextInt(109, columnWhileTickets, workSheet);
-                                excelFunctions.PutBordersBlackInt(109, columnWhile, workSheet);
-
-                                break;
-
-                            case "Tuesday":
-                                var cellAdress1TuesdaySum = workSheet.Rows[107].Columns[columnWhileTickets - 1].RangeAddressAsString;
-                                var cellAdress2TuesdaySum = workSheet.Rows[107].Columns[columnWhileTickets].RangeAddressAsString;
-                                var rangeTuesdayCA = workSheet[$"{cellAdress1TuesdaySum}:{cellAdress2TuesdaySum}"];
-                                workSheet.Rows[109].Columns[columnWhileTickets - 1].Value = rangeTuesdayCA.Sum();
-                                break;
-
-                            case "Wednesday":
-                                var cellAdress1WednesdaySum = workSheet.Rows[107].Columns[columnWhileTickets - 2].RangeAddressAsString;
-                                var cellAdress2WednesdaySum = workSheet.Rows[107].Columns[columnWhileTickets].RangeAddressAsString;
-                                var rangeWednesdayCA = workSheet[$"{cellAdress1WednesdaySum}:{cellAdress2WednesdaySum}"];
-                                workSheet.Rows[109].Columns[columnWhileTickets - 2].Value = rangeWednesdayCA.Sum();
-                                break;
-
-                            case "Thursday":
-                                var cellAdress1ThursdaySum = workSheet.Rows[107].Columns[columnWhileTickets - 3].RangeAddressAsString;
-                                var cellAdress2ThursdaySum = workSheet.Rows[107].Columns[columnWhileTickets].RangeAddressAsString;
-                                var rangeThursdayCA = workSheet[$"{cellAdress1ThursdaySum}:{cellAdress2ThursdaySum}"];
-                                workSheet.Rows[109].Columns[columnWhileTickets - 3].Value = rangeThursdayCA.Sum();
-                                break;
-
-                            case "Friday":
-                                var cellAdress1FridaySum = workSheet.Rows[107].Columns[columnWhileTickets - 4].RangeAddressAsString;
-                                var cellAdress2FridaySum = workSheet.Rows[107].Columns[columnWhileTickets].RangeAddressAsString;
-                                var rangeFridayCA = workSheet[$"{cellAdress1FridaySum}:{cellAdress2FridaySum}"];
-                                workSheet.Rows[109].Columns[columnWhileTickets - 4].Value = rangeFridayCA.Sum();
-                                break;
-
-                            case "Saturday":
-                                var cellAdress1SaturdaySum = workSheet.Rows[107].Columns[columnWhileTickets - 5].RangeAddressAsString;
-                                var cellAdress2SaturdaySum = workSheet.Rows[107].Columns[columnWhileTickets].RangeAddressAsString;
-                                var rangeSaturdayCA = workSheet[$"{cellAdress1SaturdaySum}:{cellAdress2SaturdaySum}"];
-                                workSheet.Rows[109].Columns[columnWhileTickets - 5].Value = rangeSaturdayCA.Sum();
-                                break;
-
-                            case "Sunday":
-
-                                var cellAdress1SundaySum = workSheet.Rows[107].Columns[columnWhileTickets - 6].RangeAddressAsString;
-                                var cellAdress2SundaySum = workSheet.Rows[107].Columns[columnWhileTickets].RangeAddressAsString;
-                                var rangeSundayCA = workSheet[$"{cellAdress1SundaySum}:{cellAdress2SundaySum}"];
-                                workSheet.Rows[109].Columns[columnWhileTickets - 6].Value = rangeSundayCA.Sum();
-                                break;
+                                    workSheet.Rows[102].Columns[columnWhilePutTR].Value = date.Month;
+                                    workSheet.Rows[101].Columns[columnWhilePutTR].FormatString = BuiltinFormats.Percent2;
+                                    workSheet.Rows[101].Columns[columnWhilePutTR].Value = rangeMonthlyTR.Avg();
+                                    workSheet.Rows[101].Columns[columnWhilePutTR].Style.Font.Height = 18;
+                                    workSheet.Rows[101].Columns[columnWhilePutTR].Style.Font.Bold = true;
+                                    putTRMonthly = true;
+                                    
+                                }
+                                else
+                                {
+                                    if (workSheet.Rows[102].Columns[columnWhilePutTR].Value == actualMonth)
+                                    {
+                                        workSheet.Rows[101].Columns[columnWhilePutTR].FormatString = BuiltinFormats.Percent2;
+                                        workSheet.Rows[101].Columns[columnWhilePutTR].Value = rangeMonthlyTR.Avg();
+                                        workSheet.Rows[101].Columns[columnWhilePutTR].Style.Font.Height = 18;
+                                        workSheet.Rows[101].Columns[columnWhilePutTR].Style.Font.Bold = true;
+                                        putTRMonthly = true;
+                                    }
+                                    else
+                                    {
+                                        putTRMonthly = true;
+                                    }
+                                }
+                                columnWhilePutTR++;
+                            }
+                            calculatedTicketsWeek = true;
                         }
-                        calculatedTicketsWeek = true;
                     }
+                        
+
                     calculatedTickets = true;
                 }
                 columnWhileTickets++;

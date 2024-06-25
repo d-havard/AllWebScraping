@@ -1258,11 +1258,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Stage\\ExcelC#\\ExcelLocalBiblioC\\ExcelLocalBiblioC\\ExcelLocalBiblioC.csproj",
+      "projectUniqueName": "C:\\Stage\\AllWebScraping_VirtualGame\\ExcelLocalBiblioC\\ExcelLocalBiblioC\\ExcelLocalBiblioC.csproj",
       "projectName": "ExcelLocalBiblioC",
-      "projectPath": "C:\\Stage\\ExcelC#\\ExcelLocalBiblioC\\ExcelLocalBiblioC\\ExcelLocalBiblioC.csproj",
+      "projectPath": "C:\\Stage\\AllWebScraping_VirtualGame\\ExcelLocalBiblioC\\ExcelLocalBiblioC\\ExcelLocalBiblioC.csproj",
       "packagesPath": "C:\\Users\\dewih\\.nuget\\packages\\",
-      "outputPath": "C:\\Stage\\ExcelC#\\ExcelLocalBiblioC\\ExcelLocalBiblioC\\obj\\",
+      "outputPath": "C:\\Stage\\AllWebScraping_VirtualGame\\ExcelLocalBiblioC\\ExcelLocalBiblioC\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\dewih\\AppData\\Roaming\\NuGet\\NuGet.Config",

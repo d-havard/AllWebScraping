@@ -1275,11 +1275,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Stage\\ExcelC#\\ExcelLocalBiblioC\\ExcelConsoleLocal\\ExcelConsoleLocal.csproj",
+      "projectUniqueName": "C:\\Stage\\AllWebScraping_VirtualGame\\ExcelLocalBiblioC\\ExcelConsoleLocal\\ExcelConsoleLocal.csproj",
       "projectName": "ExcelConsoleLocal",
-      "projectPath": "C:\\Stage\\ExcelC#\\ExcelLocalBiblioC\\ExcelConsoleLocal\\ExcelConsoleLocal.csproj",
+      "projectPath": "C:\\Stage\\AllWebScraping_VirtualGame\\ExcelLocalBiblioC\\ExcelConsoleLocal\\ExcelConsoleLocal.csproj",
       "packagesPath": "C:\\Users\\dewih\\.nuget\\packages\\",
-      "outputPath": "C:\\Stage\\ExcelC#\\ExcelLocalBiblioC\\ExcelConsoleLocal\\obj\\",
+      "outputPath": "C:\\Stage\\AllWebScraping_VirtualGame\\ExcelLocalBiblioC\\ExcelConsoleLocal\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\dewih\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -1296,8 +1296,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Stage\\ExcelC#\\ExcelLocalBiblioC\\ExcelLocalBiblioC\\ExcelLocalBiblioC.csproj": {
-              "projectPath": "C:\\Stage\\ExcelC#\\ExcelLocalBiblioC\\ExcelLocalBiblioC\\ExcelLocalBiblioC.csproj"
+            "C:\\Stage\\AllWebScraping_VirtualGame\\ExcelLocalBiblioC\\ExcelLocalBiblioC\\ExcelLocalBiblioC.csproj": {
+              "projectPath": "C:\\Stage\\AllWebScraping_VirtualGame\\ExcelLocalBiblioC\\ExcelLocalBiblioC\\ExcelLocalBiblioC.csproj"
             }
           }
         }

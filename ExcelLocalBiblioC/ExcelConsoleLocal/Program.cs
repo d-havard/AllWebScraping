@@ -6,7 +6,7 @@ namespace ExcelConsoleLocal
     {
         static void Main(string[] args)
         {
-            string path = "C:\\Stage\\ExcelC#\\dataFromatts.xlsx";
+            string path = "C:\\Stage\\AllWebScraping_VirtualGame\\dataFormatts";
             ExcelStructure excelStructure = new ExcelStructure(path);
             DataExcel dataExcel = new DataExcel();
 

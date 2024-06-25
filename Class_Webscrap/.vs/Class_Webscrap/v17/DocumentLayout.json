@@ -1,0 +1,197 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Stage\\AllWebScraping_VirtualGame\\Class_Webscrap\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C1F32443-773D-4C98-B5B1-469D37DCA4F6}|..\\ExcelLocalBiblioC\\ExcelLocalBiblioC\\ExcelLocalBiblioC.csproj|c:\\stage\\allwebscraping_virtualgame\\excellocalbiblioc\\excellocalbiblioc\\excelcalculs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EEEEBEC0-7BAD-45A1-B224-F93582E04FBA}|..\\ExcelLocalBiblioC\\ExcelConsoleLocal\\ExcelConsoleLocal.csproj|c:\\stage\\allwebscraping_virtualgame\\excellocalbiblioc\\excelconsolelocal\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C1F32443-773D-4C98-B5B1-469D37DCA4F6}|..\\ExcelLocalBiblioC\\ExcelLocalBiblioC\\ExcelLocalBiblioC.csproj|c:\\stage\\allwebscraping_virtualgame\\excellocalbiblioc\\excellocalbiblioc\\puttimecells.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C1F32443-773D-4C98-B5B1-469D37DCA4F6}|..\\ExcelLocalBiblioC\\ExcelLocalBiblioC\\ExcelLocalBiblioC.csproj|c:\\stage\\allwebscraping_virtualgame\\excellocalbiblioc\\excellocalbiblioc\\excelstructure.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C1F32443-773D-4C98-B5B1-469D37DCA4F6}|..\\ExcelLocalBiblioC\\ExcelLocalBiblioC\\ExcelLocalBiblioC.csproj|c:\\stage\\allwebscraping_virtualgame\\excellocalbiblioc\\excellocalbiblioc\\excelfunctions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C1F32443-773D-4C98-B5B1-469D37DCA4F6}|..\\ExcelLocalBiblioC\\ExcelLocalBiblioC\\ExcelLocalBiblioC.csproj|c:\\stage\\allwebscraping_virtualgame\\excellocalbiblioc\\excellocalbiblioc\\dataexcel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53E20563-350C-4B63-8CD0-E5FC0F1B6C1F}|Class_Webscrap.csproj|C:\\Stage\\AllWebScraping_VirtualGame\\Class_Webscrap\\fillcell.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53E20563-350C-4B63-8CD0-E5FC0F1B6C1F}|Class_Webscrap.csproj|solutionrelative:fillcell.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67ADB785-968D-45E8-B974-C65E58F184E4}|..\\Console_WebScraping\\Console_WebScraping.csproj|c:\\stage\\allwebscraping_virtualgame\\console_webscraping\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53E20563-350C-4B63-8CD0-E5FC0F1B6C1F}|Class_Webscrap.csproj|C:\\Stage\\AllWebScraping_VirtualGame\\Class_Webscrap\\v\u00E9rificationurl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53E20563-350C-4B63-8CD0-E5FC0F1B6C1F}|Class_Webscrap.csproj|solutionrelative:v\u00E9rificationurl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53E20563-350C-4B63-8CD0-E5FC0F1B6C1F}|Class_Webscrap.csproj|C:\\Stage\\AllWebScraping_VirtualGame\\Class_Webscrap\\takeinformation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53E20563-350C-4B63-8CD0-E5FC0F1B6C1F}|Class_Webscrap.csproj|solutionrelative:takeinformation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53E20563-350C-4B63-8CD0-E5FC0F1B6C1F}|Class_Webscrap.csproj|C:\\Stage\\AllWebScraping_VirtualGame\\Class_Webscrap\\navigator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53E20563-350C-4B63-8CD0-E5FC0F1B6C1F}|Class_Webscrap.csproj|solutionrelative:navigator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 282,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "FillCell.cs",
+              "DocumentMoniker": "C:\\Stage\\AllWebScraping_VirtualGame\\Class_Webscrap\\FillCell.cs",
+              "RelativeDocumentMoniker": "FillCell.cs",
+              "ToolTip": "C:\\Stage\\AllWebScraping_VirtualGame\\Class_Webscrap\\FillCell.cs",
+              "RelativeToolTip": "FillCell.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-23T13:38:54.319Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ExcelStructure.cs",
+              "DocumentMoniker": "C:\\Stage\\AllWebScraping_VirtualGame\\ExcelLocalBiblioC\\ExcelLocalBiblioC\\ExcelStructure.cs",
+              "RelativeDocumentMoniker": "..\\ExcelLocalBiblioC\\ExcelLocalBiblioC\\ExcelStructure.cs",
+              "ToolTip": "C:\\Stage\\AllWebScraping_VirtualGame\\ExcelLocalBiblioC\\ExcelLocalBiblioC\\ExcelStructure.cs",
+              "RelativeToolTip": "..\\ExcelLocalBiblioC\\ExcelLocalBiblioC\\ExcelStructure.cs",
+              "ViewState": "AQIAANAAAAAAAAAAAAAuwMUAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-23T13:18:59.093Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ExcelFunctions.cs",
+              "DocumentMoniker": "C:\\Stage\\AllWebScraping_VirtualGame\\ExcelLocalBiblioC\\ExcelLocalBiblioC\\ExcelFunctions.cs",
+              "RelativeDocumentMoniker": "..\\ExcelLocalBiblioC\\ExcelLocalBiblioC\\ExcelFunctions.cs",
+              "ToolTip": "C:\\Stage\\AllWebScraping_VirtualGame\\ExcelLocalBiblioC\\ExcelLocalBiblioC\\ExcelFunctions.cs",
+              "RelativeToolTip": "..\\ExcelLocalBiblioC\\ExcelLocalBiblioC\\ExcelFunctions.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAA8AAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-23T13:37:46.346Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "DataExcel.cs",
+              "DocumentMoniker": "C:\\Stage\\AllWebScraping_VirtualGame\\ExcelLocalBiblioC\\ExcelLocalBiblioC\\DataExcel.cs",
+              "RelativeDocumentMoniker": "..\\ExcelLocalBiblioC\\ExcelLocalBiblioC\\DataExcel.cs",
+              "ToolTip": "C:\\Stage\\AllWebScraping_VirtualGame\\ExcelLocalBiblioC\\ExcelLocalBiblioC\\DataExcel.cs",
+              "RelativeToolTip": "..\\ExcelLocalBiblioC\\ExcelLocalBiblioC\\DataExcel.cs",
+              "ViewState": "AQIAABkAAAAAAAAAAAAQwDMAAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-23T12:27:59.25Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "TakeInformation.cs",
+              "DocumentMoniker": "C:\\Stage\\AllWebScraping_VirtualGame\\Class_Webscrap\\TakeInformation.cs",
+              "RelativeDocumentMoniker": "TakeInformation.cs",
+              "ToolTip": "C:\\Stage\\AllWebScraping_VirtualGame\\Class_Webscrap\\TakeInformation.cs",
+              "RelativeToolTip": "TakeInformation.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-23T13:39:10.809Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Stage\\AllWebScraping_VirtualGame\\Console_WebScraping\\Program.cs",
+              "RelativeDocumentMoniker": "..\\Console_WebScraping\\Program.cs",
+              "ToolTip": "C:\\Stage\\AllWebScraping_VirtualGame\\Console_WebScraping\\Program.cs",
+              "RelativeToolTip": "..\\Console_WebScraping\\Program.cs",
+              "ViewState": "AQIAAB0AAAAAAAAAAAAAwGMAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-23T12:26:07.375Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ExcelCalculs.cs",
+              "DocumentMoniker": "C:\\Stage\\AllWebScraping_VirtualGame\\ExcelLocalBiblioC\\ExcelLocalBiblioC\\ExcelCalculs.cs",
+              "RelativeDocumentMoniker": "..\\ExcelLocalBiblioC\\ExcelLocalBiblioC\\ExcelCalculs.cs",
+              "ToolTip": "C:\\Stage\\AllWebScraping_VirtualGame\\ExcelLocalBiblioC\\ExcelLocalBiblioC\\ExcelCalculs.cs",
+              "RelativeToolTip": "..\\ExcelLocalBiblioC\\ExcelLocalBiblioC\\ExcelCalculs.cs",
+              "ViewState": "AQIAAAUBAAAAAAAAAAAUwAkBAAA5AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-23T08:42:07.271Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PutTimeCells.cs",
+              "DocumentMoniker": "C:\\Stage\\AllWebScraping_VirtualGame\\ExcelLocalBiblioC\\ExcelLocalBiblioC\\PutTimeCells.cs",
+              "RelativeDocumentMoniker": "..\\ExcelLocalBiblioC\\ExcelLocalBiblioC\\PutTimeCells.cs",
+              "ToolTip": "C:\\Stage\\AllWebScraping_VirtualGame\\ExcelLocalBiblioC\\ExcelLocalBiblioC\\PutTimeCells.cs",
+              "RelativeToolTip": "..\\ExcelLocalBiblioC\\ExcelLocalBiblioC\\PutTimeCells.cs",
+              "ViewState": "AQIAAK0BAAAAAAAAAAAkwMQBAABgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-23T13:38:50.874Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Stage\\AllWebScraping_VirtualGame\\ExcelLocalBiblioC\\ExcelConsoleLocal\\Program.cs",
+              "RelativeDocumentMoniker": "..\\ExcelLocalBiblioC\\ExcelConsoleLocal\\Program.cs",
+              "ToolTip": "C:\\Stage\\AllWebScraping_VirtualGame\\ExcelLocalBiblioC\\ExcelConsoleLocal\\Program.cs",
+              "RelativeToolTip": "..\\ExcelLocalBiblioC\\ExcelConsoleLocal\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-23T13:39:07.939Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "V\u00E9rificationUrl.cs",
+              "DocumentMoniker": "C:\\Stage\\AllWebScraping_VirtualGame\\Class_Webscrap\\V\u00E9rificationUrl.cs",
+              "RelativeDocumentMoniker": "V\u00E9rificationUrl.cs",
+              "ToolTip": "C:\\Stage\\AllWebScraping_VirtualGame\\Class_Webscrap\\V\u00E9rificationUrl.cs",
+              "RelativeToolTip": "V\u00E9rificationUrl.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-23T13:39:09.364Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Navigator.cs",
+              "DocumentMoniker": "C:\\Stage\\AllWebScraping_VirtualGame\\Class_Webscrap\\Navigator.cs",
+              "RelativeDocumentMoniker": "Navigator.cs",
+              "ToolTip": "C:\\Stage\\AllWebScraping_VirtualGame\\Class_Webscrap\\Navigator.cs",
+              "RelativeToolTip": "Navigator.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-23T13:39:11.463Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
