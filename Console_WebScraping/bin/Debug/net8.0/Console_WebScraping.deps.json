@@ -9,6 +9,7 @@
       "Console_WebScraping/1.0.0": {
         "dependencies": {
           "Class_Webscrap": "1.0.0",
+          "ExcelConsoleLocal": "1.0.0",
           "ExcelLocalBiblioC": "1.0.0",
           "Microsoft.Playwright": "1.44.0",
           "Microsoft.Playwright.NUnit": "1.44.0"
@@ -690,6 +691,8 @@
       },
       "Class_Webscrap/1.0.0": {
         "dependencies": {
+          "ExcelConsoleLocal": "1.0.0",
+          "ExcelLocalBiblioC": "1.0.0",
           "IronXL.Excel": "2024.6.1",
           "Microsoft.Playwright": "1.44.0",
           "Microsoft.Playwright.NUnit": "1.44.0",
@@ -698,6 +701,14 @@
         },
         "runtime": {
           "Class_Webscrap.dll": {}
+        }
+      },
+      "ExcelConsoleLocal/1.0.0": {
+        "dependencies": {
+          "ExcelLocalBiblioC": "1.0.0"
+        },
+        "runtime": {
+          "ExcelConsoleLocal.dll": {}
         }
       },
       "ExcelLocalBiblioC/1.0.0": {
@@ -1039,6 +1050,11 @@
       "hashPath": "system.windows.extensions.6.0.0.nupkg.sha512"
     },
     "Class_Webscrap/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ExcelConsoleLocal/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

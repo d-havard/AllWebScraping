@@ -44,7 +44,7 @@ namespace Console_WebScraping
 
             Console.WriteLine("Piuuf2");
 
-            dataExcel.PutDataExcel(sheet);
+            int dataExcelReturn = dataExcel.PutDataExcel(sheet);
 
             Console.WriteLine("Piuuf3");
 
@@ -98,7 +98,6 @@ namespace Console_WebScraping
             Console.WriteLine("pouf14");
             fillCell.colorCell(MaximumPlayers, NumberPlayers, sheet, positionX, positionY, BattlepassPlayers, PeakHours);
             Console.WriteLine("pef15");
-            dataExcel.PutDataExcel(sheet);
             Console.WriteLine("ghuvfdsh16");
             excelStructure.SaveFile();
             

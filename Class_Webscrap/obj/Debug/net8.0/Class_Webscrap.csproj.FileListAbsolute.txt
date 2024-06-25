@@ -431,3 +431,10 @@ C:\Stage\AllWebScraping_VirtualGame\Class_Webscrap\bin\Debug\net8.0\runtimes\win
 C:\Stage\AllWebScraping_VirtualGame\Class_Webscrap\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
 C:\Stage\AllWebScraping_VirtualGame\Class_Webscrap\obj\Debug\net8.0\Class_We.5AD8D3D1.Up2Date
 C:\Stage\AllWebScraping_VirtualGame\Class_Webscrap\obj\Debug\net8.0\Class_Webscrap.genruntimeconfig.cache
+C:\Stage\AllWebScraping_VirtualGame\Class_Webscrap\bin\Debug\net8.0\ExcelConsoleLocal.deps.json
+C:\Stage\AllWebScraping_VirtualGame\Class_Webscrap\bin\Debug\net8.0\ExcelConsoleLocal.runtimeconfig.json
+C:\Stage\AllWebScraping_VirtualGame\Class_Webscrap\bin\Debug\net8.0\ExcelConsoleLocal.exe
+C:\Stage\AllWebScraping_VirtualGame\Class_Webscrap\bin\Debug\net8.0\ExcelConsoleLocal.dll
+C:\Stage\AllWebScraping_VirtualGame\Class_Webscrap\bin\Debug\net8.0\ExcelLocalBiblioC.dll
+C:\Stage\AllWebScraping_VirtualGame\Class_Webscrap\bin\Debug\net8.0\ExcelConsoleLocal.pdb
+C:\Stage\AllWebScraping_VirtualGame\Class_Webscrap\bin\Debug\net8.0\ExcelLocalBiblioC.pdb

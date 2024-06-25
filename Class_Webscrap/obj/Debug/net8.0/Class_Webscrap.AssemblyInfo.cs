@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Class_Webscrap")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f638d7ebba19da9d3e86363087e8d2f59ad213d8")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ebc6e3a9b0f50dc0c35dc1d045f67c74243882f7")]
 [assembly: System.Reflection.AssemblyProductAttribute("Class_Webscrap")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Class_Webscrap")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

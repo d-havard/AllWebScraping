@@ -19,7 +19,7 @@ namespace ExcelLocalBiblioC
             
         }
 
-        public void PutDataExcel(WorkSheet workSheet) 
+        public int PutDataExcel(WorkSheet workSheet) 
         {
             ExcelFunctions excelFunctions = new ExcelFunctions(workSheet);
             PutTimeCells timeFunctions = new PutTimeCells(workSheet);
@@ -48,9 +48,9 @@ namespace ExcelLocalBiblioC
                 today = $"{day}/{month}/{year}";
             }
 
-            int columnWhile = timeFunctions.PutActualDayInExcel(today);
-
-            excelCalculs.CalculateTickets(today, columnWhile);
+            int columnWhile = timeFunctions.PutActualDayInExcel(today, workSheet);
+            excelCalculs.CalculateTickets(columnWhile);
+            return columnWhile;
         }
     }
 }

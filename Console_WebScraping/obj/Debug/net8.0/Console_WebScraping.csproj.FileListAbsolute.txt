@@ -876,3 +876,8 @@ C:\Stage\AllWebScraping_VirtualGame\Console_WebScraping\obj\Debug\net8.0\Console
 C:\Stage\AllWebScraping_VirtualGame\Console_WebScraping\obj\Debug\net8.0\ref\Console_WebScraping.dll
 C:\Stage\AllWebScraping_VirtualGame\Console_WebScraping\bin\Debug\net8.0\Class_Webscrap.deps.json
 C:\Stage\AllWebScraping_VirtualGame\Console_WebScraping\bin\Debug\net8.0\Class_Webscrap.runtimeconfig.json
+C:\Stage\AllWebScraping_VirtualGame\Console_WebScraping\bin\Debug\net8.0\ExcelConsoleLocal.deps.json
+C:\Stage\AllWebScraping_VirtualGame\Console_WebScraping\bin\Debug\net8.0\ExcelConsoleLocal.runtimeconfig.json
+C:\Stage\AllWebScraping_VirtualGame\Console_WebScraping\bin\Debug\net8.0\ExcelConsoleLocal.exe
+C:\Stage\AllWebScraping_VirtualGame\Console_WebScraping\bin\Debug\net8.0\ExcelConsoleLocal.dll
+C:\Stage\AllWebScraping_VirtualGame\Console_WebScraping\bin\Debug\net8.0\ExcelConsoleLocal.pdb

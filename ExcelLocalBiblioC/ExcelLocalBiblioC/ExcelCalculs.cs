@@ -14,26 +14,52 @@ namespace ExcelLocalBiblioC
     {
         WorkSheet workSheet;
         ExcelFunctions excelFunctions;
+        PutTimeCells timeFunctions;
+       
         public ExcelCalculs(WorkSheet workSheet) 
         {
-            this.workSheet = workSheet;
-            this.excelFunctions = new ExcelFunctions(workSheet);
             
+            this.workSheet = workSheet;
         }
 
-        public void CalculateTickets(string today, int columnWhile)
+        public void CalculateTickets(int columnWhile)
         {
+            ExcelFunctions excelFunctions = new ExcelFunctions(workSheet);
+            PutTimeCells timeFunctions = new PutTimeCells(workSheet);
+            int year = DateTime.Now.Year;
+            int month = DateTime.Now.Month;
+            int day = DateTime.Now.Day;
+            string zeroBeforeTenDay = "0";
+            string zeroBeforeTenMonth = "0";
+            string todayForTickets = $"{zeroBeforeTenDay}{day}/{zeroBeforeTenMonth}{month}/{year}";
 
+            if (day < 10 && month < 10)
+            {
+                todayForTickets = $"{zeroBeforeTenMonth}{day}/{zeroBeforeTenMonth}{month}/{year}";
+            }
+            if (day < 10 && month >= 10)
+            {
+                todayForTickets = $"{zeroBeforeTenDay}{day}/{month}/{year}";
+            }
+            if (day >= 10 && month < 10)
+            {
+                todayForTickets = $"{day}/{zeroBeforeTenMonth}{month}/{year}";
+            }
+            if (day >= 10 && month >= 10)
+            {
+                todayForTickets = $"{day}/{month}/{year}";
+            }
             decimal ticketsVendus = 0;
             decimal ticketsDispos = 0;
             int columnWhileTickets = 2;
             bool calculatedTickets = false;
             DateTime currentDay = DateTime.Today;
+            bool monthTRPut = false;
 
             while (!calculatedTickets)
             {
                 string[] cellDay = workSheet.Rows[6].Columns[columnWhileTickets].Value.ToString().Split(' ');
-                if (cellDay[0] == today)
+                if (cellDay[0] == todayForTickets)
                 {
                     for (int i = 8; i < 92; i++)
                     {
@@ -126,7 +152,7 @@ namespace ExcelLocalBiblioC
                     while (!calculatedTicketsWeek)
                     {
                         string dayForCalculateCA = currentDay.DayOfWeek.ToString();
-                        if (cellDay[0] == today)
+                        if (cellDay[0] == todayForTickets)
                         {
                             switch (dayForCalculateCA)
                             {
@@ -249,14 +275,51 @@ namespace ExcelLocalBiblioC
                             Console.WriteLine(dayMonthInt);
                             Console.WriteLine(lastDayMonthInt);
                             Console.WriteLine(firstDayOfMonth.ToString() + " / " + lastDayOfMonth.ToString());
-                            var cellForRange1 = workSheet.Rows[94].Columns[columnWhileTickets - actualDayMonthInt + 1].RangeAddressAsString;
-                            var cellForRange2 = workSheet.Rows[94].Columns[columnWhileTickets - actualDayMonthInt + lastDayMonthInt].RangeAddressAsString;
-                            var rangeMonthlyTR = workSheet[$"{cellForRange1}:{cellForRange2}"];
+                            var cellForRangeTR1 = workSheet.Rows[94].Columns[columnWhileTickets - actualDayMonthInt + 1].RangeAddressAsString;
+                            var cellForRangeTR2 = workSheet.Rows[94].Columns[columnWhileTickets - actualDayMonthInt + lastDayMonthInt].RangeAddressAsString;
+                            var rangeMonthlyTR = workSheet[$"{cellForRangeTR1}:{cellForRangeTR2}"];
+                            var cellForRangeCA1 = workSheet.Rows[107].Columns[columnWhileTickets - actualDayMonthInt + 1].RangeAddressAsString;
+                            var cellForRangeCA2 = workSheet.Rows[107].Columns[columnWhileTickets - actualDayMonthInt + lastDayMonthInt].RangeAddressAsString;
+                            var rangeMonthlyCA = workSheet[$"{cellForRangeCA1}:{cellForRangeCA2}"];
                             workSheet.Rows[95].Columns[columnWhileTickets - actualDayMonthInt + 1].Value = rangeMonthlyTR.Avg();
-                            excelFunctions.CenterTextInt(95, columnWhileTickets - actualDayMonthInt + 1, workSheet);
-                            workSheet.Rows[95].Columns[columnWhileTickets - actualDayMonthInt + 1].Style.Font.Height = 18;
-                            workSheet.Rows[95].Columns[columnWhileTickets - actualDayMonthInt + 1].Style.Font.Bold = true;
+                            workSheet.Rows[111].Columns[columnWhileTickets - actualDayMonthInt + 1].Value = rangeMonthlyCA.Sum();
                             workSheet.Rows[95].Columns[columnWhileTickets - actualDayMonthInt + 1].FormatString = BuiltinFormats.Percent2;
+                            
+
+                            int columnWhilePutTR = 2;
+                            bool putTRMonthly = false;
+                            while (!putTRMonthly)
+                            {                              
+                                var actualMonth = workSheet.Rows[102].Columns[columnWhilePutTR].Value;
+                                
+                                if (workSheet.Rows[101].Columns[columnWhilePutTR].IsEmpty && workSheet.Rows[102].Columns[columnWhilePutTR].IsEmpty)
+                                {
+
+                                    workSheet.Rows[102].Columns[columnWhilePutTR].Value = date.Month;
+                                    workSheet.Rows[101].Columns[columnWhilePutTR].FormatString = BuiltinFormats.Percent2;
+                                    workSheet.Rows[101].Columns[columnWhilePutTR].Value = rangeMonthlyTR.Avg();
+                                    workSheet.Rows[101].Columns[columnWhilePutTR].Style.Font.Height = 18;
+                                    workSheet.Rows[101].Columns[columnWhilePutTR].Style.Font.Bold = true;
+                                    putTRMonthly = true;
+                                    
+                                }
+                                else
+                                {
+                                    if (workSheet.Rows[102].Columns[columnWhilePutTR].Value == actualMonth)
+                                    {
+                                        workSheet.Rows[101].Columns[columnWhilePutTR].FormatString = BuiltinFormats.Percent2;
+                                        workSheet.Rows[101].Columns[columnWhilePutTR].Value = rangeMonthlyTR.Avg();
+                                        workSheet.Rows[101].Columns[columnWhilePutTR].Style.Font.Height = 18;
+                                        workSheet.Rows[101].Columns[columnWhilePutTR].Style.Font.Bold = true;
+                                        putTRMonthly = true;
+                                    }
+                                    else
+                                    {
+                                        putTRMonthly = true;
+                                    }
+                                }
+                                columnWhilePutTR++;
+                            }
                             calculatedTicketsWeek = true;
                         }
                     }

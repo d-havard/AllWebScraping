@@ -1014,6 +1014,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
+          "ExcelConsoleLocal": "1.0.0",
+          "ExcelLocalBiblioC": "1.0.0",
           "IronXL.Excel": "2024.6.1",
           "Microsoft.Playwright": "1.44.0",
           "Microsoft.Playwright.NUnit": "1.44.0",
@@ -1025,6 +1027,19 @@
         },
         "runtime": {
           "bin/placeholder/Class_Webscrap.dll": {}
+        }
+      },
+      "ExcelConsoleLocal/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "ExcelLocalBiblioC": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ExcelConsoleLocal.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ExcelConsoleLocal.dll": {}
         }
       },
       "ExcelLocalBiblioC/1.0.0": {
@@ -3086,6 +3101,11 @@
       "path": "../Class_Webscrap/Class_Webscrap.csproj",
       "msbuildProject": "../Class_Webscrap/Class_Webscrap.csproj"
     },
+    "ExcelConsoleLocal/1.0.0": {
+      "type": "project",
+      "path": "../ExcelLocalBiblioC/ExcelConsoleLocal/ExcelConsoleLocal.csproj",
+      "msbuildProject": "../ExcelLocalBiblioC/ExcelConsoleLocal/ExcelConsoleLocal.csproj"
+    },
     "ExcelLocalBiblioC/1.0.0": {
       "type": "project",
       "path": "../ExcelLocalBiblioC/ExcelLocalBiblioC/ExcelLocalBiblioC.csproj",
@@ -3095,6 +3115,7 @@
   "projectFileDependencyGroups": {
     "net8.0": [
       "Class_Webscrap >= 1.0.0",
+      "ExcelConsoleLocal >= 1.0.0",
       "ExcelLocalBiblioC >= 1.0.0",
       "Microsoft.Playwright >= 1.44.0",
       "Microsoft.Playwright.NUnit >= 1.44.0"
@@ -3129,6 +3150,9 @@
           "projectReferences": {
             "C:\\Stage\\AllWebScraping_VirtualGame\\Class_Webscrap\\Class_Webscrap.csproj": {
               "projectPath": "C:\\Stage\\AllWebScraping_VirtualGame\\Class_Webscrap\\Class_Webscrap.csproj"
+            },
+            "C:\\Stage\\AllWebScraping_VirtualGame\\ExcelLocalBiblioC\\ExcelConsoleLocal\\ExcelConsoleLocal.csproj": {
+              "projectPath": "C:\\Stage\\AllWebScraping_VirtualGame\\ExcelLocalBiblioC\\ExcelConsoleLocal\\ExcelConsoleLocal.csproj"
             },
             "C:\\Stage\\AllWebScraping_VirtualGame\\ExcelLocalBiblioC\\ExcelLocalBiblioC\\ExcelLocalBiblioC.csproj": {
               "projectPath": "C:\\Stage\\AllWebScraping_VirtualGame\\ExcelLocalBiblioC\\ExcelLocalBiblioC\\ExcelLocalBiblioC.csproj"
