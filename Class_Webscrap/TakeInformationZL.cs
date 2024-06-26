@@ -30,12 +30,20 @@ namespace Class_Webscrap
         List<decimal> PriceList = new();
         string jsonContent = "";
 
-
-        public async Task ReadJson(string filename)
+        /// <summary>
+        /// Read the JSON file
+        /// </summary>
+        /// <param name="path"></param>
+        /// <returns>Nothing</returns>
+        public async Task ReadJson(string path)
         {
-            jsonContent = await File.ReadAllTextAsync(filename);
+            jsonContent = await File.ReadAllTextAsync(path);
         }
 
+        /// <summary>
+        /// Deserialize the json file to use it later
+        /// </summary>
+        /// <returns>the JSONDocument where there is all the informations</returns>
         public JsonDocument DeserializeJson()
         {
             var request = JsonConvert.DeserializeObject(jsonContent);
@@ -44,6 +52,11 @@ namespace Class_Webscrap
             return document;
         }
 
+
+        /// <summary>
+        /// Get every useful element to put in the excel and add them to several lists
+        /// </summary>
+        /// <param name="document"></param>
         public void GetElements(JsonDocument document)
         {
             root = document.RootElement.EnumerateArray();
@@ -82,11 +95,11 @@ namespace Class_Webscrap
             }
         }
 
-        public void rearrangedate()
-        {
-            string[] splitDate = date.Split('-');
-            date = splitDate[2] + "/" + splitDate[1] + "/" + splitDate[0];
-        }
+        //public void rearrangedate()
+        //{
+        //    string[] splitDate = date.Split('-');
+        //    date = splitDate[2] + "/" + splitDate[1] + "/" + splitDate[0];
+        //}
 
         public string Getdate()
         {

@@ -9,6 +9,11 @@ namespace Class_Webscrap
 {
     public class NavigatorOxmozvr
     {
+        /// <summary>
+        /// Launch the emulated navigator to get the JSON file with the information that are on the website, 
+        /// and download the JSON file.
+        /// </summary>
+        /// <param name="url"></param>
         public void LaunchNavigatorAndGetJsonFile(string url)
         {
             HttpWebRequest httpWebRequest = (HttpWebRequest)WebRequest.Create(url);

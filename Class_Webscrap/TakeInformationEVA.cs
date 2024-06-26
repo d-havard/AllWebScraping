@@ -40,12 +40,12 @@ namespace Class_Webscrap
         /// </summary>
         /// <param name="jsonResponses"></param>
         /// <returns>the path to the good file</returns>
-        public async Task<string> GetJsonFile(List<string> jsonResponses)
+        public async Task<string> GetJsonFile(List<string> jsonResponses, string nomsheet)
         {
-            string PathJsonFile = "response_10.json";
+            string PathJsonFile = "..\\..\\..\\..\\Json_Files\\response_10.json";
             for (int i = 1; i < jsonResponses.Count; i++)
             {
-                var jsonFilePath = $"response_{i}.json";
+                var jsonFilePath = $"..\\..\\..\\..\\Json_Files\\response_{nomsheet}.json";
                 string jsonContent = await File.ReadAllTextAsync(jsonFilePath);
 
                 var request = JsonConvert.DeserializeObject(jsonContent);
@@ -106,7 +106,8 @@ namespace Class_Webscrap
             string JsonContent = await File.ReadAllTextAsync(JsonFilePath);
             JsonDocument document = JsonDocument.Parse(JsonContent);
             root = document.RootElement;
-            data = root.GetProperty("data");
+            JsonElement data = root.GetProperty("data");
+            
             calendar = data.GetProperty("calendar");
             sessionList = calendar.GetProperty("sessionList");
             list = sessionList.GetProperty("list").EnumerateArray();
@@ -166,7 +167,7 @@ namespace Class_Webscrap
         /// <summary>
         /// Get the list of Peak hour of every sessions
         /// </summary>
-        /// <returns></returns>
+        /// <returns>The Peak Hour List</returns>
         public List<bool> GetPeakHour()
         {
             return peakHourList;

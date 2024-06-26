@@ -20,4 +20,8 @@
     <ProjectReference Include="..\ExcelLocalBiblioC\ExcelLocalBiblioC\ExcelLocalBiblioC.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\ExcelLocalBiblioC\ExcelLocalBiblioC\ExcelLocalBiblioC.csproj" />
+  </ItemGroup>
+
 </Project>

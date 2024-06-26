@@ -19,9 +19,9 @@ namespace Class_Webscrap
             string nomSheet = "";
             switch(url)
             {
-                case string ur when ur.Contains("locationId=1&gameId"):
-                    nomSheet = "BEAUCHAMP";
-                    break;
+                //case string ur when ur.Contains("locationId=1&gameId"):
+                //    nomSheet = "EVA BEAUCHAMP";
+                //    break;
 
                 case string ur when ur.Contains("locationId=2&gameId"):
                     nomSheet = "EVA NANTES";
@@ -45,14 +45,6 @@ namespace Class_Webscrap
 
                 case string ur when ur.Contains("locationId=7&gameId"):
                     nomSheet = "EVA TOULOUSE";
-                    break;
-
-                case string ur when ur.Contains("locationId=8&gameId"):
-                    nomSheet = "EVA BOURGOIN-JALLIEU";
-                    break;
-
-                case string ur when ur.Contains("locationId=9&gameId"):
-                    nomSheet = "EVA BOURGOIN-JALLIEU";
                     break;
 
                 case string ur when ur.Contains("locationId=10&gameId"):
@@ -151,11 +143,11 @@ namespace Class_Webscrap
                     nomSheet = "EVA NANCY";
                     break;
 
-                case "https://oxmozvr.fr/reservation/arena/?clear-cart":
+                case string ur when ur.Contains("oxmozvr.fr"):
                     nomSheet = "OXMOZ TOULOUSE";
                     break;
 
-                case "https://booking.zerolatencyvr.com/book-now/larochelle/":
+                case string ur when ur.Contains("booking.zerolatencyvr.com"):
                     nomSheet = "ZEROLATENCY LA ROCHELLE";
                     break;
             }
