@@ -45,6 +45,16 @@ namespace Class_Webscrap
             }
         }
 
+        /// <summary>
+        /// Color the selected cell depending on how many player there are in one session
+        /// </summary>
+        /// <param name="MaximumPlayer"></param>
+        /// <param name="NumberPlayer"></param>
+        /// <param name="sheet"></param>
+        /// <param name="positionX"></param>
+        /// <param name="positionY"></param>
+        /// <param name="battlepassPlayers"></param>
+        /// <param name="peakHours"></param>
         public void colorCell(List<int> MaximumPlayer, List<int> NumberPlayer, WorkSheet sheet, int positionX, int[] positionY, List<bool> battlepassPlayers, List<bool> peakHours)
         {
             int incrementPlayer = 0;

@@ -14,4 +14,8 @@
     <PackageReference Include="Selenium.WebDriver.ChromeDriver" Version="125.0.6422.14100" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\ExcelLocalBiblioC\ExcelLocalBiblioC\ExcelLocalBiblioC.csproj" />
+  </ItemGroup>
+
 </Project>

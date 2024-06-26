@@ -6,6 +6,9 @@ using OpenQA.Selenium.DevTools.V123.Audits;
 using Microsoft.Playwright;
 using ExcelLocalBiblioC;
 using IronXL;
+using System.Text.Json;
+using static System.Net.WebRequestMethods;
+using System.Security.Policy;
 
 namespace Console_WebScraping
 {
@@ -13,89 +16,206 @@ namespace Console_WebScraping
     {
         static async Task Main(string[] args)
         {
-            string path = "N:\\Stage\\Virtual_game\\Webcsrap\\dataFormatts.xlsx";
+            UrlList urlList = new UrlList();
 
-            LocateFile locateFile = new LocateFile(path, @"N:\Stage\Virtual_game\Webcsrap\AllWebScraping_VirtualGame\dataFormatts.xlsx");
+            urlList.MakeUrlList();
 
+            List<string> Urllist = urlList.GetUrlList();
+            string path = "..\\..\\..\\..\\..\\dataFormatts.xlsx";
+            LocateFile locateFile = new LocateFile(path);
             ExcelStructure excelStructure = new ExcelStructure(path);
-
             LocateCell locateCell = new LocateCell();
-
-            FillCell fillCell = new FillCell();
-
-            TakeInformation takeInformation = new TakeInformation();
-
-            Navigator navigator = new Navigator();
-            
             VerificationUrl verificationUrl = new VerificationUrl();
+            NavigatorEVA navigatorEVA = new NavigatorEVA();
+            NavigatorZL navigatorZL = new NavigatorZL();
+            NavigatorOxmozvr navigatorOxmozvr = new NavigatorOxmozvr();
+            
+
+            TakeInformationEVA takeInformationEVA = new TakeInformationEVA();
+            TakeInformationZL takeInformationZL = new TakeInformationZL();
+            TakeInformationOxmozvr takeInformationOxmozvr = new TakeInformationOxmozvr();
 
             DataExcel dataExcel = new DataExcel();
+            JsonFileList jsonFileList = new JsonFileList();
 
-            string nomSheet = verificationUrl.NameUrl("https://www.eva.gg/fr-FR/booking?locationId=24&gameId=1&currentDate=2024-06-17");
+            string JsonFilePath = "";
 
-            var sheet = excelStructure.VerificationIfFileExist("EVA RENNES");
+            string date = DateTime.Now.ToString("dd/MM/yyyy");
+            foreach (string url in Urllist)
+            {
+                string nomSheet = verificationUrl.NameUrl(url);
 
-            Console.WriteLine("Piuuf");
+                if (nomSheet.Contains("EVA"))
+                {
+                    List<string> JsonResponses = await navigatorEVA.LaunchNavigatorProcess(url, nomSheet);
 
-            excelStructure.CreateStructure(path);
+                    JsonFilePath = await takeInformationEVA.GetJsonFile(JsonResponses, nomSheet);
+                
+                    jsonFileList.AddFileToList(JsonFilePath);
+                }
+                else
+                {
+                    if (nomSheet.Contains("OXMOZ"))
+                    {
+                        navigatorOxmozvr.LaunchNavigatorAndGetJsonFile(url);
 
-            Console.WriteLine("Piuuf");
+                        jsonFileList.AddFileToList("..\\..\\..\\..\\Json_Files\\Oxmoz.json");
+                    }
+                    if (nomSheet.Contains("ZEROLATENCY"))
+                    {
+                        navigatorZL.DownloadJsonFile(url);
 
-            dataExcel.PutDataExcel(sheet);
+                        jsonFileList.AddFileToList("..\\..\\..\\..\\Json_Files\\zerolatency.json");
+                    }
+                }
+                
+            }
 
-            Console.WriteLine("Piuuf");
+            List<string> JsonFiles = jsonFileList.GetPathFile();
+            int intfile = 0;
 
-            List<string> JsonResponses = await navigator.LaunchNavigatorProcess("https://www.eva.gg/fr-FR/booking?locationId=24&gameId=1&currentDate=2024-06-17");
+            foreach (string url in Urllist)
+            {
+                string nomSheet = verificationUrl.NameUrl(url);
 
-            //IPage page = await navigator.interceptWebRequest(browser);
+                var sheet = excelStructure.VerificationIfFileExist(nomSheet);
+
+                FillCellEVA fillCellEVA = new FillCellEVA(sheet);
+                FillCellZLAndOx fillCellZLAndOx = new FillCellZLAndOx(sheet);
+
+
+                Console.WriteLine("1");
+
+                excelStructure.CreateStructure(path, nomSheet);
+
+                Console.WriteLine("2");
+
+                dataExcel.PutDataExcel(sheet);
+
+                Console.WriteLine("3");
+
+                Console.WriteLine("etat sauvegarde");
+                excelStructure.SaveFile(path);
+            }
+
+
+            foreach (string url in Urllist)
+            {
+                string nomSheet = verificationUrl.NameUrl(url);
+
+                var sheet = excelStructure.VerificationIfFileExist(nomSheet);
+
+                FillCellEVA fillCellEVA = new FillCellEVA(sheet);
+                FillCellZLAndOx fillCellZLAndOx = new FillCellZLAndOx(sheet);
+
+
+                //Console.WriteLine("1");
+
+                //excelStructure.CreateStructure(path, nomSheet);
+
+                //Console.WriteLine("2");
+
+                //dataExcel.PutDataExcel(sheet);
+
+                //Console.WriteLine("3");
+
+                if (nomSheet.Contains("EVA"))
+                {
+
+                    Console.WriteLine(nomSheet);
+
+                    await takeInformationEVA.GetInformation(JsonFiles[intfile]);
+
+                    List<string> StartedHoursEVA = takeInformationEVA.GetStartedHour();
+
+                    List<int> MaximumPlayersEVA = takeInformationEVA.GetMaximumPlayer();
+
+                    List<int> NumberPlayersEVA = takeInformationEVA.GetNumberPlayer();
+
+                    List<bool> BattlepassPlayersEVA = takeInformationEVA.GetBattlePassPlayer();
+
+                    List<bool> PeakHoursEVA = takeInformationEVA.GetPeakHour();
+
+                    int positionX = locateCell.locateCellXPosition(date, sheet);
+
+                    int[] positionY = locateCell.LocateCellYPosition(StartedHoursEVA, sheet, nomSheet);
+
+                    Console.WriteLine("4");
+
+                    fillCellEVA.FillSelectedCell(MaximumPlayersEVA, NumberPlayersEVA, sheet, positionX, positionY);
+
+                    Console.WriteLine("5");
+
+                    fillCellEVA.colorCell(MaximumPlayersEVA, NumberPlayersEVA, sheet, positionX, positionY, BattlepassPlayersEVA, PeakHoursEVA);
+
+                    Console.WriteLine("6");
+
+                    intfile++;
+                }
+                else
+                {
+                    List<string> StartedHours = new List<string>();
+                    List<int> MaximumPlayers = new List<int>();
+                    List<int> NumberPlayers = new List<int>();
+                    List<decimal> pricesZL = new List<decimal>();
+
+                    if (nomSheet.Contains("OXMOZ"))
+                    {
+
+                        Console.WriteLine(nomSheet);
+
+                        JsonDocument documentOx = await takeInformationOxmozvr.GetDeserializedDocument();
+
+                        takeInformationOxmozvr.GetInformationFromJson(documentOx);
+
+                        StartedHours = takeInformationOxmozvr.GetStartList();
+
+                        MaximumPlayers = takeInformationOxmozvr.GetMaximumPlayerList();
+
+                        NumberPlayers = takeInformationOxmozvr.GetNumberPlayerList();
+
+                        Console.WriteLine("4");
+                    }
+                    if (nomSheet.Contains("ZEROLATENCY"))
+                    {
+
+                        Console.WriteLine(nomSheet);
+
+                        await takeInformationZL.ReadJson(JsonFiles[intfile]);
+
+                        JsonDocument documentZL = takeInformationZL.DeserializeJson();
+
+                        takeInformationZL.GetElements(documentZL);
+
+                        StartedHours = takeInformationZL.GetHourList();
+
+                        MaximumPlayers = takeInformationZL.GetMaximumPlayerList();
+
+                        NumberPlayers = takeInformationZL.GetNumberPlayerList();
+
+                        pricesZL = takeInformationZL.GetPriceList();
+
+                        Console.WriteLine("4");
+                    }
+
+                    int positionX = locateCell.locateCellXPosition(date, sheet);
+
+                    int[] positionY = locateCell.LocateCellYPosition(StartedHours, sheet, nomSheet);
+
+                    fillCellZLAndOx.FillSelectedCellForZL(MaximumPlayers, NumberPlayers, sheet, positionX, positionY);
+
+                    Console.WriteLine("5");
+
+                    fillCellZLAndOx.ColorCell(MaximumPlayers, NumberPlayers, sheet, positionX, positionY);
+
+                    Console.WriteLine("6");
+
+                    intfile++;
+                }
+                Console.WriteLine("etat sauvegarde");
+                excelStructure.SaveFile(path);
+            }  
             
-            //await navigator.goToUrl("https://www.eva.gg/fr-FR/booking?locationId=24&gameId=1&currentDate=2024-06-11", page);
-
-            //await navigator.SaveJsonFiles(browser);
-
-            //List<string> JsonResponses = navigator.getJsonResponses();
-
-            string JsonFilePath = await takeInformation.GetJsonFile(JsonResponses);
-
-            Console.WriteLine("Piuuf");
-
-            string DateFormat = await takeInformation.RearrangeDate(JsonFilePath);
-
-            Console.WriteLine("Piiif");
-
-            await takeInformation.GetInformation(JsonFilePath);
-
-            Console.WriteLine("Pioif");
-
-            List<string> StartedHours = takeInformation.GetStartedHour();
-
-            Console.WriteLine("Pfduf");
-
-            List<int> MaximumPlayers = takeInformation.GetMaximumPlayer();
-
-            Console.WriteLine("Plef");
-
-            List<int> NumberPlayers = takeInformation.GetNumberPlayer();
-
-            Console.WriteLine("Piauf");
-
-            List<bool> BattlepassPlayers = takeInformation.GetBattlePassPlayer();
-
-            Console.WriteLine("Piaf");
-
-            List<bool> PeakHours = takeInformation.GetPeakHour();
-
-            Console.WriteLine("Pief");
-
-            int positionX = locateCell.locateCellXPosition(DateFormat, sheet);
-            Console.WriteLine("paf");
-            int [] positionY = locateCell.LocateCellYPosition(StartedHours, sheet);
-            Console.WriteLine("pif");
-            fillCell.FillSelectedCell(MaximumPlayers, NumberPlayers, sheet ,positionX, positionY);
-            Console.WriteLine("pouf");
-            fillCell.colorCell(MaximumPlayers, NumberPlayers, sheet, positionX, positionY, BattlepassPlayers, PeakHours);
-            Console.WriteLine("pef");
-            excelStructure.SaveFile(path);
             
         }
     }

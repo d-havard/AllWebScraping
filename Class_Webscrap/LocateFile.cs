@@ -20,10 +20,9 @@ namespace Class_Webscrap
         /// </summary>
         /// <param name="OriginalFilePath"></param>
         /// <param name="SaveFilePath"></param>
-        public LocateFile(string OriginalFilePath,string SaveFilePath)
+        public LocateFile(string OriginalFilePath)
         {
             this.OriginalFilePath = OriginalFilePath;
-            this.SaveFilePath = SaveFilePath;
             
         }
         

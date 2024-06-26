@@ -24,7 +24,10 @@ namespace Class_Webscrap
         List<int> MaximumPlayerList = new List<int>();
         string dateTime = "";
 
-
+        /// <summary>
+        /// Read the JSON and deserialize it to use the informations in the JSON file
+        /// </summary>
+        /// <returns>The JsonDocument</returns>
         public async Task<JsonDocument> GetDeserializedDocument()
         {
             string jsonContent = await File.ReadAllTextAsync("Oxmoz.json");
@@ -35,6 +38,10 @@ namespace Class_Webscrap
             return document;
         }
 
+        /// <summary>
+        /// Get all the informations needed in the json to put them afterward in multiple lists
+        /// </summary>
+        /// <param name="document"></param>
         public void GetInformationFromJson(JsonDocument document)
         {
             root = document.RootElement;
@@ -55,7 +62,7 @@ namespace Class_Webscrap
                     
                     if (title.ToString() == "Arena")
                     {
-                        startList.Add(startSplit[1]);
+                        startList.Add(startString);
                     }
 
                 }
@@ -91,6 +98,10 @@ namespace Class_Webscrap
             return dateTime;
         }
 
+        /// <summary>
+        /// Get the List of the started hours of each sessions
+        /// </summary>
+        /// <returns>the List of the started hours of each sessions</returns>
         public List<string> GetStartList() 
         {
             return startList;
