@@ -6,9 +6,14 @@ using OpenQA.Selenium.DevTools.V123.Audits;
 using Microsoft.Playwright;
 using ExcelLocalBiblioC;
 using IronXL;
+
 using System.Text.Json;
 using static System.Net.WebRequestMethods;
 using System.Security.Policy;
+
+using IronXL.Formatting;
+using IronXL.Styles;
+using NUnit.Framework.Internal.Execution;
 
 namespace Console_WebScraping
 {
@@ -59,17 +64,22 @@ namespace Console_WebScraping
                     {
                         navigatorOxmozvr.LaunchNavigatorAndGetJsonFile(url);
 
+
                         jsonFileList.AddFileToList("..\\..\\..\\..\\Json_Files\\Oxmoz.json");
                     }
                     if (nomSheet.Contains("ZEROLATENCY"))
                     {
                         navigatorZL.DownloadJsonFile(url);
 
+            
+
+
                         jsonFileList.AddFileToList("..\\..\\..\\..\\Json_Files\\zerolatency.json");
                     }
                 }
                 
             }
+
 
             List<string> JsonFiles = jsonFileList.GetPathFile();
             int intfile = 0;
@@ -79,6 +89,12 @@ namespace Console_WebScraping
                 string nomSheet = verificationUrl.NameUrl(url);
 
                 var sheet = excelStructure.VerificationIfFileExist(nomSheet);
+
+            
+
+                int dataExcelReturn = dataExcel.PutDataExcel(sheet);
+
+            
 
                 FillCellEVA fillCellEVA = new FillCellEVA(sheet);
                 FillCellZLAndOx fillCellZLAndOx = new FillCellZLAndOx(sheet);
@@ -124,31 +140,55 @@ namespace Console_WebScraping
 
                     Console.WriteLine(nomSheet);
 
+
                     await takeInformationEVA.GetInformation(JsonFiles[intfile]);
+
+                    Console.WriteLine("Piuuf4");
+
 
                     List<string> StartedHoursEVA = takeInformationEVA.GetStartedHour();
 
+
                     List<int> MaximumPlayersEVA = takeInformationEVA.GetMaximumPlayer();
+
+                    Console.WriteLine("Piiif5");
+
 
                     List<int> NumberPlayersEVA = takeInformationEVA.GetNumberPlayer();
 
+
                     List<bool> BattlepassPlayersEVA = takeInformationEVA.GetBattlePassPlayer();
+
+                    Console.WriteLine("Pioif6");
+
 
                     List<bool> PeakHoursEVA = takeInformationEVA.GetPeakHour();
 
+
                     int positionX = locateCell.locateCellXPosition(date, sheet);
+
+                    Console.WriteLine("Pfduf7");
+
 
                     int[] positionY = locateCell.LocateCellYPosition(StartedHoursEVA, sheet, nomSheet);
 
+
                     Console.WriteLine("4");
+
+                    Console.WriteLine("Plef8");
+
 
                     fillCellEVA.FillSelectedCell(MaximumPlayersEVA, NumberPlayersEVA, sheet, positionX, positionY);
 
+
                     Console.WriteLine("5");
+
 
                     fillCellEVA.colorCell(MaximumPlayersEVA, NumberPlayersEVA, sheet, positionX, positionY, BattlepassPlayersEVA, PeakHoursEVA);
 
+
                     Console.WriteLine("6");
+
 
                     intfile++;
                 }
@@ -158,6 +198,7 @@ namespace Console_WebScraping
                     List<int> MaximumPlayers = new List<int>();
                     List<int> NumberPlayers = new List<int>();
                     List<decimal> pricesZL = new List<decimal>();
+
 
                     if (nomSheet.Contains("OXMOZ"))
                     {
@@ -214,9 +255,7 @@ namespace Console_WebScraping
                 }
                 Console.WriteLine("etat sauvegarde");
                 excelStructure.SaveFile(path);
-            }  
-            
-            
+            } 
         }
     }
 }

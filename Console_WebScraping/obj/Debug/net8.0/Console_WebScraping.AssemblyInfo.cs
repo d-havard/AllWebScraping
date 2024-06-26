@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Console_WebScraping")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+10ac3290647f29dad694a172cda6302c77d7d847")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2f6b3582d0e14b75fe93a59bdb60674592bd1cef")]
 [assembly: System.Reflection.AssemblyProductAttribute("Console_WebScraping")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Console_WebScraping")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

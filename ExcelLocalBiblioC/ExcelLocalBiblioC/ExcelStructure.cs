@@ -239,28 +239,6 @@ namespace ExcelLocalBiblioC
                     workSheet["B96"].Style.Font.Bold = true;
                     workSheet["B96"].Style.Font.Height = 10;
                 }
-                if (workSheet["B97"].IsEmpty)
-                {
-                    workSheet["B97"].Value = "Taux de remplissage Annuel";
-                    workSheet.Rows[96].Height = 400;
-                    workSheet["B97"].Style.BackgroundColor = "#ffffff";
-                    workSheet["B97"].Style.Font.Bold = true;
-                    workSheet["B97"].Style.Font.Height = 10;
-                }
-
-                if (workSheet["B98"].IsEmpty)
-                {
-                    workSheet["B98"].Value = $"Moyenne à partir du {today}";
-                    workSheet.Rows[97].Height = 400;
-                    workSheet["B98"].Style.BackgroundColor = "#9900ff";
-                    workSheet["B98"].Style.VerticalAlignment = VerticalAlignment.Center;
-                    workSheet["B98"].Style.HorizontalAlignment = HorizontalAlignment.Center;
-                    workSheet["B98"].Style.Font.Color = "#ffffff";
-                    workSheet["C98"].Style.BackgroundColor = "#9900ff";
-                    workSheet["C98"].Style.VerticalAlignment = VerticalAlignment.Center;
-                    workSheet["C98"].Style.HorizontalAlignment = HorizontalAlignment.Center;
-                    workSheet["C98"].Style.Font.Color = "#ffffff";
-                }
 
                 if (workSheet["B99"].IsEmpty)
                 {
@@ -305,6 +283,14 @@ namespace ExcelLocalBiblioC
                     workSheet["A102"].Style.VerticalAlignment = VerticalAlignment.Center;
                     workSheet["A102"].Style.HorizontalAlignment = HorizontalAlignment.Center;
                 }
+                if (workSheet["B103"].IsEmpty)
+                {
+                    workSheet["B103"].Value = "Année (en nombres)";
+                    workSheet["B103"].Style.Font.Bold = false;
+                    workSheet["B103"].Style.Font.Height = 11;
+                    workSheet["B103"].Style.VerticalAlignment = VerticalAlignment.Center;
+                    workSheet["B103"].Style.HorizontalAlignment = HorizontalAlignment.Center;
+                }
                 if (workSheet["A104"].IsEmpty)
                 {
                     workSheet["A104"].Value = "Taux de remplissage / an";
@@ -314,6 +300,14 @@ namespace ExcelLocalBiblioC
                     workSheet["A104"].Style.Font.Height = 21;
                     workSheet["A104"].Style.VerticalAlignment = VerticalAlignment.Center;
                     workSheet["A104"].Style.HorizontalAlignment = HorizontalAlignment.Center;
+                }
+                if (workSheet["B105"].IsEmpty)
+                {
+                    workSheet["B105"].Value = "Année (en nombres)";
+                    workSheet["B105"].Style.Font.Bold = false;
+                    workSheet["B105"].Style.Font.Height = 11;
+                    workSheet["B105"].Style.VerticalAlignment = VerticalAlignment.Center;
+                    workSheet["B105"].Style.HorizontalAlignment = HorizontalAlignment.Center;
                 }
                 if (workSheet["B108"].IsEmpty)
                 {
@@ -345,17 +339,42 @@ namespace ExcelLocalBiblioC
                     workSheet["B112"].Style.VerticalAlignment = VerticalAlignment.Center;
                     workSheet["B112"].Style.HorizontalAlignment = HorizontalAlignment.Center;
                 }
-                if (workSheet["B114"].IsEmpty)
+                if (workSheet["A116"].IsEmpty)
                 {
-                    //workSheet.Rows[113].FormatString = BuiltinFormats.Number2;
-                    workSheet["B114"].StringValue = "Estimation CA Annuel";
-                    workSheet.Rows[113].Height = 400;
-                    workSheet["B114"].Style.Font.Bold = true;
-                    workSheet["B114"].Style.Font.Height = 10;
-                    workSheet["B114"].Style.VerticalAlignment = VerticalAlignment.Center;
-                    workSheet["B114"].Style.HorizontalAlignment = HorizontalAlignment.Center;                    
+                    workSheet["A116"].Value = "CA / mois";
+                    workSheet.Rows[115].Height = 500;
+                    workSheet.Merge("A116:B116");
+                    workSheet["A116"].Style.Font.Bold = true;
+                    workSheet["A116"].Style.Font.Height = 21;
+                    workSheet["A116"].Style.VerticalAlignment = VerticalAlignment.Center;
+                    workSheet["A116"].Style.HorizontalAlignment = HorizontalAlignment.Center;
                 }
-
+                if (workSheet["B117"].IsEmpty)
+                {
+                    workSheet["B117"].Value = "Année (en nombres)";
+                    workSheet["B117"].Style.Font.Bold = false;
+                    workSheet["B117"].Style.Font.Height = 11;
+                    workSheet["B117"].Style.VerticalAlignment = VerticalAlignment.Center;
+                    workSheet["B117"].Style.HorizontalAlignment = HorizontalAlignment.Center;
+                }
+                if (workSheet["A118"].IsEmpty)
+                {
+                    workSheet["A118"].Value = "CA / an";
+                    workSheet.Rows[115].Height = 500;
+                    workSheet.Merge("A118:B118");
+                    workSheet["A118"].Style.Font.Bold = true;   
+                    workSheet["A118"].Style.Font.Height = 21;
+                    workSheet["A118"].Style.VerticalAlignment = VerticalAlignment.Center;
+                    workSheet["A118"].Style.HorizontalAlignment = HorizontalAlignment.Center;
+                }
+                if (workSheet["B119"].IsEmpty)
+                {
+                    workSheet["B119"].Value = "Année (en nombres)";
+                    workSheet["B119"].Style.Font.Bold = false;
+                    workSheet["B119"].Style.Font.Height = 11;
+                    workSheet["B119"].Style.VerticalAlignment = VerticalAlignment.Center;
+                    workSheet["B119"].Style.HorizontalAlignment = HorizontalAlignment.Center;
+                }
                 if (workSheet["B120"].IsEmpty)
                 {
                     string cell = "B120";
@@ -416,7 +435,7 @@ namespace ExcelLocalBiblioC
 
         public void SaveFile()
         {
-            workBook.SaveAs("C:\\Stage\\ExcelC#\\dataFromatts.xlsx");
+            workBook.SaveAs("C:\\Stage\\AllWebScraping_VirtualGame\\dataFormatts.xlsx");
         }
     }
 }
