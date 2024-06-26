@@ -27,6 +27,8 @@ namespace ExcelLocalBiblioC
             bool dayPut = false;
             int columnWhile = 2;
             bool weekPut = false;
+
+            //Boucle pour mettre le jour actuel dans le ficiher Excel, avec une vérifivation si il est déjà mis.
             while (!dayPut)
             {
                 string[] cellBefore = workSheet.Rows[6].Columns[columnWhile - 1].Value.ToString().Split(' ');
@@ -182,21 +184,13 @@ namespace ExcelLocalBiblioC
                                     {
                                         if (workSheet.Rows[94].Columns[columnWhile].IsEmpty)
                                         {
-                                            var cellAdress1Merge = workSheet.Rows[94].Columns[columnWhile].RangeAddressAsString;
-                                            var cellAdress2Merge = workSheet.Rows[94].Columns[columnWhile + 4].RangeAddressAsString;
-                                            var mergeWeek = workSheet.Merge($"{cellAdress1Merge}:{cellAdress2Merge}");
                                             var cellAdress1Avg = workSheet.Rows[93].Columns[columnWhile].RangeAddressAsString;
                                             var cellAdress2Avg = workSheet.Rows[93].Columns[columnWhile + 4].RangeAddressAsString;
                                             var rangeAvg = workSheet[$"{cellAdress1Avg}:{cellAdress2Avg}"];
                                             var cellAdressString = workSheet.Rows[94].Columns[columnWhile].RangeAddressAsString;
-                                            workSheet[$"{cellAdressString}"].Value = rangeAvg.Avg();
                                             workSheet[$"{cellAdressString}"].Style.Font.Height = 18;
                                             workSheet[$"{cellAdressString}"].Style.Font.Bold = true;
                                             excelFunctions.CenterTextString(cellAdressString, workSheet);
-
-                                            var cellAdress1MergeCA = workSheet.Rows[109].Columns[columnWhile].RangeAddressAsString;
-                                            var cellAdress2MergeCA = workSheet.Rows[109].Columns[columnWhile + 4].RangeAddressAsString;
-                                            //var mergeWeekCA = workSheet.Merge($"{cellAdress1MergeCA}:{cellAdress2MergeCA}");
                                             var cellAdress1AvgCA = workSheet.Rows[109].Columns[columnWhile].RangeAddressAsString;
                                             var cellAdress2AvgCA = workSheet.Rows[109].Columns[columnWhile + 4].RangeAddressAsString;
                                             var rangeAvgCA = workSheet[$"{cellAdress1AvgCA}:{cellAdress2AvgCA}"];
@@ -228,7 +222,6 @@ namespace ExcelLocalBiblioC
                                         {
                                             var cellAdress1Merge = workSheet.Rows[94].Columns[columnWhile].RangeAddressAsString;
                                             var cellAdress2Merge = workSheet.Rows[94].Columns[columnWhile + 3].RangeAddressAsString;
-                                            var mergeWeek = workSheet.Merge($"{cellAdress1Merge}:{cellAdress2Merge}");
                                             var cellAdress1Avg = workSheet.Rows[93].Columns[columnWhile].RangeAddressAsString;
                                             var cellAdress2Avg = workSheet.Rows[93].Columns[columnWhile + 3].RangeAddressAsString;
                                             var rangeAvg = workSheet[$"{cellAdress1Avg}:{cellAdress2Avg}"];
@@ -239,7 +232,6 @@ namespace ExcelLocalBiblioC
 
                                             var cellAdress1MergeCA = workSheet.Rows[109].Columns[columnWhile].RangeAddressAsString;
                                             var cellAdress2MergeCA = workSheet.Rows[109].Columns[columnWhile + 3].RangeAddressAsString;
-                                            var mergeWeekCA = workSheet.Merge($"{cellAdress1MergeCA}:{cellAdress2MergeCA}");
                                             var cellAdress1AvgCA = workSheet.Rows[109].Columns[columnWhile].RangeAddressAsString;
                                             var cellAdress2AvgCA = workSheet.Rows[109].Columns[columnWhile + 3].RangeAddressAsString;
                                             var rangeAvgCA = workSheet[$"{cellAdress1AvgCA}:{cellAdress2AvgCA}"];
@@ -279,7 +271,6 @@ namespace ExcelLocalBiblioC
                                         {
                                             var cellAdress1Merge = workSheet.Rows[94].Columns[columnWhile].RangeAddressAsString;
                                             var cellAdress2Merge = workSheet.Rows[94].Columns[columnWhile + 2].RangeAddressAsString;
-                                            var mergeWeek = workSheet.Merge($"{cellAdress1Merge}:{cellAdress2Merge}");
                                             var cellAdress1Avg = workSheet.Rows[93].Columns[columnWhile].RangeAddressAsString;
                                             var cellAdress2Avg = workSheet.Rows[93].Columns[columnWhile + 2].RangeAddressAsString;
                                             var rangeAvg = workSheet[$"{cellAdress1Avg}:{cellAdress2Avg}"];
@@ -290,7 +281,6 @@ namespace ExcelLocalBiblioC
 
                                             var cellAdress1MergeCA = workSheet.Rows[109].Columns[columnWhile].RangeAddressAsString;
                                             var cellAdress2MergeCA = workSheet.Rows[109].Columns[columnWhile + 2].RangeAddressAsString;
-                                            var mergeWeekCA = workSheet.Merge($"{cellAdress1MergeCA}:{cellAdress2MergeCA}");
                                             var cellAdress1AvgCA = workSheet.Rows[109].Columns[columnWhile].RangeAddressAsString;
                                             var cellAdress2AvgCA = workSheet.Rows[109].Columns[columnWhile + 2].RangeAddressAsString;
                                             var rangeAvgCA = workSheet[$"{cellAdress1AvgCA}:{cellAdress2AvgCA}"];
@@ -330,7 +320,6 @@ namespace ExcelLocalBiblioC
                                         {
                                             var cellAdress1Merge = workSheet.Rows[94].Columns[columnWhile].RangeAddressAsString;
                                             var cellAdress2Merge = workSheet.Rows[94].Columns[columnWhile + 1].RangeAddressAsString;
-                                            //var mergeWeek = workSheet.Merge($"{cellAdress1Merge}:{cellAdress2Merge}");
                                             var cellAdress1Avg = workSheet.Rows[93].Columns[columnWhile].RangeAddressAsString;
                                             var cellAdress2Avg = workSheet.Rows[93].Columns[columnWhile + 1].RangeAddressAsString;
                                             var rangeAvg = workSheet[$"{cellAdress1Avg}:{cellAdress2Avg}"];
@@ -341,7 +330,6 @@ namespace ExcelLocalBiblioC
 
                                             var cellAdress1MergeCA = workSheet.Rows[109].Columns[columnWhile].RangeAddressAsString;
                                             var cellAdress2MergeCA = workSheet.Rows[109].Columns[columnWhile + 1].RangeAddressAsString;
-                                            //var mergeWeekCA = workSheet.Merge($"{cellAdress1MergeCA}:{cellAdress2MergeCA}");
                                             var cellAdress1AvgCA = workSheet.Rows[109].Columns[columnWhile].RangeAddressAsString;
                                             var cellAdress2AvgCA = workSheet.Rows[109].Columns[columnWhile + 1].RangeAddressAsString;
                                             var rangeAvgCA = workSheet[$"{cellAdress1AvgCA}:{cellAdress2AvgCA}"];
@@ -399,14 +387,6 @@ namespace ExcelLocalBiblioC
                                             workSheet[$"{cellAdressStringCA}"].Style.Font.Height = 18;
                                             workSheet[$"{cellAdressStringCA}"].Style.Font.Bold = true;
                                             excelFunctions.CenterTextString(cellAdressStringCA, workSheet);
-                                            //if (workSheet[$"{rangeAvg}"].IsEmpty)
-                                            //{
-                                            //    workSheet[$"{rangeAvg}"].Value = rangeAvg.Avg();
-                                            //}
-                                            //else
-                                            //{
-                                            //    workSheet[$"{rangeAvg}"].Value = rangeAvg.Avg();
-                                            //}
                                             weekPut = true;
                                         }
                                         else
