@@ -5,8 +5,6 @@ You have to install VisualStudio with the follow extensions :
 
 - In desktop and mobile : Development in .NET desktop
 
-
-
 The file is in Console_WebScrap
 
 When you open the folder, there is 4 folder :
@@ -52,3 +50,11 @@ when i'ts done you can finally run the program.
 Wait.
 
 When the command prompt say done at the end, you can open the excel file and close all the windows open.
+
+If you want to change the path of the file or the default name, follow the nexts steps :
+
+- Go to Program.cs of Console_WebScraping and change the "path" variable, you can do a ctrl + F for search it. 
+
+This is for changing the path of the Excel file and the name of the file.
+
+For exemple : E:\\Stage\\Virtual_game\\WebScraping\\dataFormatts.xlsx create the file dataFormatts the the CD E: and the folder WebScraping.
