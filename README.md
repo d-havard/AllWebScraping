@@ -5,6 +5,8 @@ You have to install VisualStudio with the follow extensions :
 
 - In desktop and mobile : Development in .NET desktop
 
+
+
 The file is in Console_WebScrap
 
 When you open the folder, there is 4 folder :
@@ -50,6 +52,7 @@ when i'ts done you can finally run the program.
 Wait.
 
 When the command prompt say done at the end, you can open the excel file and close all the windows open.
+
 
 If you want to change the path of the file or the default name, follow the nexts steps :
 

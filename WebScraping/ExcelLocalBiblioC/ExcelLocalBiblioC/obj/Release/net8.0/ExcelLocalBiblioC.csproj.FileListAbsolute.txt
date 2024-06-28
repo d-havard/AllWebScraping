@@ -1,0 +1,13 @@
+C:\Stage\WebScraping\WebScraping\ExcelLocalBiblioC\ExcelLocalBiblioC\bin\Release\net8.0\ExcelLocalBiblioC.deps.json
+C:\Stage\WebScraping\WebScraping\ExcelLocalBiblioC\ExcelLocalBiblioC\bin\Release\net8.0\ExcelLocalBiblioC.dll
+C:\Stage\WebScraping\WebScraping\ExcelLocalBiblioC\ExcelLocalBiblioC\bin\Release\net8.0\ExcelLocalBiblioC.pdb
+C:\Stage\WebScraping\WebScraping\ExcelLocalBiblioC\ExcelLocalBiblioC\obj\Release\net8.0\ExcelLocalBiblioC.csproj.AssemblyReference.cache
+C:\Stage\WebScraping\WebScraping\ExcelLocalBiblioC\ExcelLocalBiblioC\obj\Release\net8.0\ExcelLocalBiblioC.GeneratedMSBuildEditorConfig.editorconfig
+C:\Stage\WebScraping\WebScraping\ExcelLocalBiblioC\ExcelLocalBiblioC\obj\Release\net8.0\ExcelLocalBiblioC.AssemblyInfoInputs.cache
+C:\Stage\WebScraping\WebScraping\ExcelLocalBiblioC\ExcelLocalBiblioC\obj\Release\net8.0\ExcelLocalBiblioC.AssemblyInfo.cs
+C:\Stage\WebScraping\WebScraping\ExcelLocalBiblioC\ExcelLocalBiblioC\obj\Release\net8.0\ExcelLocalBiblioC.csproj.CoreCompileInputs.cache
+C:\Stage\WebScraping\WebScraping\ExcelLocalBiblioC\ExcelLocalBiblioC\obj\Release\net8.0\ExcelLocalBiblioC.sourcelink.json
+C:\Stage\WebScraping\WebScraping\ExcelLocalBiblioC\ExcelLocalBiblioC\obj\Release\net8.0\ExcelLocalBiblioC.dll
+C:\Stage\WebScraping\WebScraping\ExcelLocalBiblioC\ExcelLocalBiblioC\obj\Release\net8.0\refint\ExcelLocalBiblioC.dll
+C:\Stage\WebScraping\WebScraping\ExcelLocalBiblioC\ExcelLocalBiblioC\obj\Release\net8.0\ExcelLocalBiblioC.pdb
+C:\Stage\WebScraping\WebScraping\ExcelLocalBiblioC\ExcelLocalBiblioC\obj\Release\net8.0\ref\ExcelLocalBiblioC.dll

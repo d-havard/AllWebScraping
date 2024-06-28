@@ -1,0 +1,389 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Stage\\WebScraping\\WebScraping\\Class_Webscrap\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{53E20563-350C-4B63-8CD0-E5FC0F1B6C1F}|Class_Webscrap.csproj|c:\\stage\\webscraping\\webscraping\\class_webscrap\\takeinformationeva.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53E20563-350C-4B63-8CD0-E5FC0F1B6C1F}|Class_Webscrap.csproj|solutionrelative:takeinformationeva.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67ADB785-968D-45E8-B974-C65E58F184E4}|..\\Console_WebScraping\\Console_WebScraping.csproj|c:\\stage\\webscraping\\webscraping\\console_webscraping\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53E20563-350C-4B63-8CD0-E5FC0F1B6C1F}|Class_Webscrap.csproj|c:\\stage\\webscraping\\webscraping\\class_webscrap\\v\u00E9rificationurl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53E20563-350C-4B63-8CD0-E5FC0F1B6C1F}|Class_Webscrap.csproj|solutionrelative:v\u00E9rificationurl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53E20563-350C-4B63-8CD0-E5FC0F1B6C1F}|Class_Webscrap.csproj|c:\\stage\\webscraping\\webscraping\\class_webscrap\\urllist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53E20563-350C-4B63-8CD0-E5FC0F1B6C1F}|Class_Webscrap.csproj|solutionrelative:urllist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53E20563-350C-4B63-8CD0-E5FC0F1B6C1F}|Class_Webscrap.csproj|c:\\stage\\webscraping\\webscraping\\class_webscrap\\takeinformationzl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53E20563-350C-4B63-8CD0-E5FC0F1B6C1F}|Class_Webscrap.csproj|solutionrelative:takeinformationzl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53E20563-350C-4B63-8CD0-E5FC0F1B6C1F}|Class_Webscrap.csproj|c:\\stage\\webscraping\\webscraping\\class_webscrap\\takeinformationoxmozvr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53E20563-350C-4B63-8CD0-E5FC0F1B6C1F}|Class_Webscrap.csproj|solutionrelative:takeinformationoxmozvr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53E20563-350C-4B63-8CD0-E5FC0F1B6C1F}|Class_Webscrap.csproj|c:\\stage\\webscraping\\webscraping\\class_webscrap\\takeinformation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53E20563-350C-4B63-8CD0-E5FC0F1B6C1F}|Class_Webscrap.csproj|solutionrelative:takeinformation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53E20563-350C-4B63-8CD0-E5FC0F1B6C1F}|Class_Webscrap.csproj|c:\\stage\\webscraping\\webscraping\\class_webscrap\\navigatorzl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53E20563-350C-4B63-8CD0-E5FC0F1B6C1F}|Class_Webscrap.csproj|solutionrelative:navigatorzl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53E20563-350C-4B63-8CD0-E5FC0F1B6C1F}|Class_Webscrap.csproj|c:\\stage\\webscraping\\webscraping\\class_webscrap\\navigatoroxmozvr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53E20563-350C-4B63-8CD0-E5FC0F1B6C1F}|Class_Webscrap.csproj|solutionrelative:navigatoroxmozvr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53E20563-350C-4B63-8CD0-E5FC0F1B6C1F}|Class_Webscrap.csproj|c:\\stage\\webscraping\\webscraping\\class_webscrap\\navigatoreva.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53E20563-350C-4B63-8CD0-E5FC0F1B6C1F}|Class_Webscrap.csproj|solutionrelative:navigatoreva.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53E20563-350C-4B63-8CD0-E5FC0F1B6C1F}|Class_Webscrap.csproj|c:\\stage\\webscraping\\webscraping\\class_webscrap\\navigator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53E20563-350C-4B63-8CD0-E5FC0F1B6C1F}|Class_Webscrap.csproj|solutionrelative:navigator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53E20563-350C-4B63-8CD0-E5FC0F1B6C1F}|Class_Webscrap.csproj|c:\\stage\\webscraping\\webscraping\\class_webscrap\\locatefile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53E20563-350C-4B63-8CD0-E5FC0F1B6C1F}|Class_Webscrap.csproj|solutionrelative:locatefile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53E20563-350C-4B63-8CD0-E5FC0F1B6C1F}|Class_Webscrap.csproj|c:\\stage\\webscraping\\webscraping\\class_webscrap\\locatecell.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53E20563-350C-4B63-8CD0-E5FC0F1B6C1F}|Class_Webscrap.csproj|solutionrelative:locatecell.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53E20563-350C-4B63-8CD0-E5FC0F1B6C1F}|Class_Webscrap.csproj|c:\\stage\\webscraping\\webscraping\\class_webscrap\\jsonfilelist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53E20563-350C-4B63-8CD0-E5FC0F1B6C1F}|Class_Webscrap.csproj|solutionrelative:jsonfilelist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53E20563-350C-4B63-8CD0-E5FC0F1B6C1F}|Class_Webscrap.csproj|c:\\stage\\webscraping\\webscraping\\class_webscrap\\fillcellzlandox.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53E20563-350C-4B63-8CD0-E5FC0F1B6C1F}|Class_Webscrap.csproj|solutionrelative:fillcellzlandox.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53E20563-350C-4B63-8CD0-E5FC0F1B6C1F}|Class_Webscrap.csproj|c:\\stage\\webscraping\\webscraping\\class_webscrap\\fillcelloxmozvr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53E20563-350C-4B63-8CD0-E5FC0F1B6C1F}|Class_Webscrap.csproj|solutionrelative:fillcelloxmozvr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53E20563-350C-4B63-8CD0-E5FC0F1B6C1F}|Class_Webscrap.csproj|c:\\stage\\webscraping\\webscraping\\class_webscrap\\fillcelleva.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53E20563-350C-4B63-8CD0-E5FC0F1B6C1F}|Class_Webscrap.csproj|solutionrelative:fillcelleva.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53E20563-350C-4B63-8CD0-E5FC0F1B6C1F}|Class_Webscrap.csproj|c:\\stage\\webscraping\\webscraping\\class_webscrap\\fillcell.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53E20563-350C-4B63-8CD0-E5FC0F1B6C1F}|Class_Webscrap.csproj|solutionrelative:fillcell.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\Stage\\Virtual_game\\WebScraping\\Console_WebScraping\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\Stage\\Virtual_game\\WebScraping\\ExcelLocalBiblioC\\ExcelLocalBiblioC\\ExcelStructure.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\Stage\\Virtual_game\\WebScraping\\ExcelLocalBiblioC\\ExcelLocalBiblioC\\DataExcel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Yumi\\Desktop\\WebScraping\\ExcelLocalBiblioC\\ExcelLocalBiblioC\\ExcelStructure.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Yumi\\Desktop\\WebScraping\\ExcelLocalBiblioC\\ExcelLocalBiblioC\\ExcelCalculs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "V\u00E9rificationUrl.cs",
+              "DocumentMoniker": "C:\\Stage\\WebScraping\\WebScraping\\Class_Webscrap\\V\u00E9rificationUrl.cs",
+              "RelativeDocumentMoniker": "V\u00E9rificationUrl.cs",
+              "ToolTip": "C:\\Stage\\WebScraping\\WebScraping\\Class_Webscrap\\V\u00E9rificationUrl.cs",
+              "RelativeToolTip": "V\u00E9rificationUrl.cs",
+              "ViewState": "AQIAAHwAAAAAAAAAAAAgwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-28T14:33:31.826Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UrlList.cs",
+              "DocumentMoniker": "C:\\Stage\\WebScraping\\WebScraping\\Class_Webscrap\\UrlList.cs",
+              "RelativeDocumentMoniker": "UrlList.cs",
+              "ToolTip": "C:\\Stage\\WebScraping\\WebScraping\\Class_Webscrap\\UrlList.cs",
+              "RelativeToolTip": "UrlList.cs",
+              "ViewState": "AQIAADQAAAAAAAAAAAAgwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-28T14:33:29.41Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "TakeInformationZL.cs",
+              "DocumentMoniker": "C:\\Stage\\WebScraping\\WebScraping\\Class_Webscrap\\TakeInformationZL.cs",
+              "RelativeDocumentMoniker": "TakeInformationZL.cs",
+              "ToolTip": "C:\\Stage\\WebScraping\\WebScraping\\Class_Webscrap\\TakeInformationZL.cs",
+              "RelativeToolTip": "TakeInformationZL.cs",
+              "ViewState": "AQIAAFAAAAAAAAAAAAAwwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-28T14:33:25.003Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "TakeInformationOxmozvr.cs",
+              "DocumentMoniker": "C:\\Stage\\WebScraping\\WebScraping\\Class_Webscrap\\TakeInformationOxmozvr.cs",
+              "RelativeDocumentMoniker": "TakeInformationOxmozvr.cs",
+              "ToolTip": "C:\\Stage\\WebScraping\\WebScraping\\Class_Webscrap\\TakeInformationOxmozvr.cs",
+              "RelativeToolTip": "TakeInformationOxmozvr.cs",
+              "ViewState": "AQIAAGIAAAAAAAAAAAAwwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-28T14:33:20Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TakeInformationEVA.cs",
+              "DocumentMoniker": "C:\\Stage\\WebScraping\\WebScraping\\Class_Webscrap\\TakeInformationEVA.cs",
+              "RelativeDocumentMoniker": "TakeInformationEVA.cs",
+              "ToolTip": "C:\\Stage\\WebScraping\\WebScraping\\Class_Webscrap\\TakeInformationEVA.cs",
+              "RelativeToolTip": "TakeInformationEVA.cs",
+              "ViewState": "AQIAAB8AAAAAAAAAAAAkwDAAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-28T14:33:05.08Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "TakeInformation.cs",
+              "DocumentMoniker": "C:\\Stage\\WebScraping\\WebScraping\\Class_Webscrap\\TakeInformation.cs",
+              "RelativeDocumentMoniker": "TakeInformation.cs",
+              "ToolTip": "C:\\Stage\\WebScraping\\WebScraping\\Class_Webscrap\\TakeInformation.cs",
+              "RelativeToolTip": "TakeInformation.cs",
+              "ViewState": "AQIAAJwAAAAAAAAAAAAmwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-28T14:32:59.427Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "NavigatorZL.cs",
+              "DocumentMoniker": "C:\\Stage\\WebScraping\\WebScraping\\Class_Webscrap\\NavigatorZL.cs",
+              "RelativeDocumentMoniker": "NavigatorZL.cs",
+              "ToolTip": "C:\\Stage\\WebScraping\\WebScraping\\Class_Webscrap\\NavigatorZL.cs",
+              "RelativeToolTip": "NavigatorZL.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAAA2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-28T14:32:25.976Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "NavigatorOxmozvr.cs",
+              "DocumentMoniker": "C:\\Stage\\WebScraping\\WebScraping\\Class_Webscrap\\NavigatorOxmozvr.cs",
+              "RelativeDocumentMoniker": "NavigatorOxmozvr.cs",
+              "ToolTip": "C:\\Stage\\WebScraping\\WebScraping\\Class_Webscrap\\NavigatorOxmozvr.cs",
+              "RelativeToolTip": "NavigatorOxmozvr.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-28T14:32:04.785Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "NavigatorEVA.cs",
+              "DocumentMoniker": "C:\\Stage\\WebScraping\\WebScraping\\Class_Webscrap\\NavigatorEVA.cs",
+              "RelativeDocumentMoniker": "NavigatorEVA.cs",
+              "ToolTip": "C:\\Stage\\WebScraping\\WebScraping\\Class_Webscrap\\NavigatorEVA.cs",
+              "RelativeToolTip": "NavigatorEVA.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEAAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-28T14:32:02.09Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Navigator.cs",
+              "DocumentMoniker": "C:\\Stage\\WebScraping\\WebScraping\\Class_Webscrap\\Navigator.cs",
+              "RelativeDocumentMoniker": "Navigator.cs",
+              "ToolTip": "C:\\Stage\\WebScraping\\WebScraping\\Class_Webscrap\\Navigator.cs",
+              "RelativeToolTip": "Navigator.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-28T14:32:02.534Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "LocateFile.cs",
+              "DocumentMoniker": "C:\\Stage\\WebScraping\\WebScraping\\Class_Webscrap\\LocateFile.cs",
+              "RelativeDocumentMoniker": "LocateFile.cs",
+              "ToolTip": "C:\\Stage\\WebScraping\\WebScraping\\Class_Webscrap\\LocateFile.cs",
+              "RelativeToolTip": "LocateFile.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-28T14:31:58.027Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "LocateCell.cs",
+              "DocumentMoniker": "C:\\Stage\\WebScraping\\WebScraping\\Class_Webscrap\\LocateCell.cs",
+              "RelativeDocumentMoniker": "LocateCell.cs",
+              "ToolTip": "C:\\Stage\\WebScraping\\WebScraping\\Class_Webscrap\\LocateCell.cs",
+              "RelativeToolTip": "LocateCell.cs",
+              "ViewState": "AQIAAEUAAAAAAAAAAAAowAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-28T14:31:55.261Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "JsonFileList.cs",
+              "DocumentMoniker": "C:\\Stage\\WebScraping\\WebScraping\\Class_Webscrap\\JsonFileList.cs",
+              "RelativeDocumentMoniker": "JsonFileList.cs",
+              "ToolTip": "C:\\Stage\\WebScraping\\WebScraping\\Class_Webscrap\\JsonFileList.cs",
+              "RelativeToolTip": "JsonFileList.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-28T14:31:53.599Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "FillCellOxmozvr.cs",
+              "DocumentMoniker": "C:\\Stage\\WebScraping\\WebScraping\\Class_Webscrap\\FillCellOxmozvr.cs",
+              "RelativeDocumentMoniker": "FillCellOxmozvr.cs",
+              "ToolTip": "C:\\Stage\\WebScraping\\WebScraping\\Class_Webscrap\\FillCellOxmozvr.cs",
+              "RelativeToolTip": "FillCellOxmozvr.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-28T14:31:47.501Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "FillCellEVA.cs",
+              "DocumentMoniker": "C:\\Stage\\WebScraping\\WebScraping\\Class_Webscrap\\FillCellEVA.cs",
+              "RelativeDocumentMoniker": "FillCellEVA.cs",
+              "ToolTip": "C:\\Stage\\WebScraping\\WebScraping\\Class_Webscrap\\FillCellEVA.cs",
+              "RelativeToolTip": "FillCellEVA.cs",
+              "ViewState": "AQIAAHcAAAAAAAAAAAAwwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-28T14:31:44.006Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "FillCell.cs",
+              "DocumentMoniker": "C:\\Stage\\WebScraping\\WebScraping\\Class_Webscrap\\FillCell.cs",
+              "RelativeDocumentMoniker": "FillCell.cs",
+              "ToolTip": "C:\\Stage\\WebScraping\\WebScraping\\Class_Webscrap\\FillCell.cs",
+              "RelativeToolTip": "FillCell.cs",
+              "ViewState": "AQIAAHgAAAAAAAAAAAAowAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-28T14:31:39.618Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Stage\\WebScraping\\WebScraping\\Console_WebScraping\\Program.cs",
+              "RelativeDocumentMoniker": "..\\Console_WebScraping\\Program.cs",
+              "ToolTip": "C:\\Stage\\WebScraping\\WebScraping\\Console_WebScraping\\Program.cs",
+              "RelativeToolTip": "..\\Console_WebScraping\\Program.cs",
+              "ViewState": "AQIAAAkBAAAAAAAAAAAgwCEAAABSAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-28T13:18:16.217Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "FillCellZLAndOx.cs",
+              "DocumentMoniker": "C:\\Stage\\WebScraping\\WebScraping\\Class_Webscrap\\FillCellZLAndOx.cs",
+              "RelativeDocumentMoniker": "FillCellZLAndOx.cs",
+              "ToolTip": "C:\\Stage\\WebScraping\\WebScraping\\Class_Webscrap\\FillCellZLAndOx.cs",
+              "RelativeToolTip": "FillCellZLAndOx.cs",
+              "ViewState": "AQIAAE0AAAAAAAAAAAAwwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-28T10:57:41.56Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "ExcelStructure.cs",
+              "DocumentMoniker": "C:\\Users\\Yumi\\Desktop\\WebScraping\\ExcelLocalBiblioC\\ExcelLocalBiblioC\\ExcelStructure.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\Users\\Yumi\\Desktop\\WebScraping\\ExcelLocalBiblioC\\ExcelLocalBiblioC\\ExcelStructure.cs",
+              "ToolTip": "C:\\Users\\Yumi\\Desktop\\WebScraping\\ExcelLocalBiblioC\\ExcelLocalBiblioC\\ExcelStructure.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\Users\\Yumi\\Desktop\\WebScraping\\ExcelLocalBiblioC\\ExcelLocalBiblioC\\ExcelStructure.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-28T09:13:52.848Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "ExcelCalculs.cs",
+              "DocumentMoniker": "C:\\Users\\Yumi\\Desktop\\WebScraping\\ExcelLocalBiblioC\\ExcelLocalBiblioC\\ExcelCalculs.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\Users\\Yumi\\Desktop\\WebScraping\\ExcelLocalBiblioC\\ExcelLocalBiblioC\\ExcelCalculs.cs",
+              "ToolTip": "C:\\Users\\Yumi\\Desktop\\WebScraping\\ExcelLocalBiblioC\\ExcelLocalBiblioC\\ExcelCalculs.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\Users\\Yumi\\Desktop\\WebScraping\\ExcelLocalBiblioC\\ExcelLocalBiblioC\\ExcelCalculs.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-28T08:19:30.686Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\Stage\\Virtual_game\\WebScraping\\Console_WebScraping\\Program.cs",
+              "ToolTip": "E:\\Stage\\Virtual_game\\WebScraping\\Console_WebScraping\\Program.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-26T17:46:13.146Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "ExcelStructure.cs",
+              "DocumentMoniker": "E:\\Stage\\Virtual_game\\WebScraping\\ExcelLocalBiblioC\\ExcelLocalBiblioC\\ExcelStructure.cs",
+              "ToolTip": "E:\\Stage\\Virtual_game\\WebScraping\\ExcelLocalBiblioC\\ExcelLocalBiblioC\\ExcelStructure.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-26T17:47:41.568Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "DataExcel.cs",
+              "DocumentMoniker": "E:\\Stage\\Virtual_game\\WebScraping\\ExcelLocalBiblioC\\ExcelLocalBiblioC\\DataExcel.cs",
+              "ToolTip": "E:\\Stage\\Virtual_game\\WebScraping\\ExcelLocalBiblioC\\ExcelLocalBiblioC\\DataExcel.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-26T19:24:41.767Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
