@@ -19,7 +19,7 @@ You have to install PowerShell and do the following steps :
 
 - Install PowerShell : https://github.com/PowerShell/PowerShell/releases/download/v7.4.3/PowerShell-7.4.3-win-x64.zip
 - Run PowerShell
-- Go to your file location of the solution with PowerShell, type "cd (and you file path)" to the Console_Webcrap folder
+- Go to your file location of the solution with PowerShell, type "cd (and your file path)" to the Console_Webcrap folder
 - Type in PowerShell the following line : "pwsh bin/Debug/netX/playwright.ps1 install"
 - "netX" has to be change with your current version of .NET, you can see it when you click on bin and than Debug, the folder netX will appear.
 
