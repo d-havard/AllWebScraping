@@ -1,4 +1,4 @@
-# AllWebScraping_VirtualGame
+# AllWebScraping_
 All the program for take the data and create the Excel with the input of data in the excel
 
 You have to install VisualStudio with the follow extensions :
